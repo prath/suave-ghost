@@ -17,12 +17,10 @@ function refreshMenuPos(){
         mainNav.addClass('navbar-fixed-top');
         mainNav.removeClass('navbar-absolute-bottom');
         mainNav.css('top', 0);
-        $('.droppable').css('top', '50px');
     }else{
         mainNav.addClass('navbar-absolute-bottom');
         mainNav.removeClass('navbar-fixed-top');
         mainNav.css('top', winH - mainNav.height());
-        $('.droppable').css('top', '0px')
     }
 }
 
@@ -51,11 +49,11 @@ jQuery(document).ready(function(){
     $('#drop-the-nav').on('click', function(e){
         e.preventDefault();
         if($('.droppable').hasClass("hiden")) {
-            $('.droppable').slideDown("fast", "easeOutBack");
+            $('.droppable').slideDown("fast");
             $('.droppable').removeClass("hiden");
             $('.droppable').addClass("shown");
         } else {
-            $('.droppable').slideUp("fast", "easeInBack");
+            $('.droppable').slideUp("fast");
             $('.droppable').removeClass("shown");
             $('.droppable').addClass("hiden");
         }
