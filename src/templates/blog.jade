@@ -1,0 +1,508 @@
+//- 
+    =====================================================================
+    * Index Page
+    * 
+    * @author Pratama H. Salahudin <pratama@hasriyan.com>
+    =====================================================================
+
+extends inc/master
+
+//- title
+block title
+    title Suave - Minimalist Business Theme for Bootstrap | Single Post
+
+//- content
+block content
+    
+    //- // PAGE TITLE
+    //- mixin page-title("Blog")
+    section#breadcrumbs.region.reset-vertical-gap.widen-top-gap
+        .container
+            ol.breadcrumb
+                li 
+                    a(href="http://") Home
+                li 
+                    a(href="http://") Posts
+                li.active 
+                    a(href="http://") Climb leg rub face
+
+    section#main-content-area.region.reset-vertical-gap
+        .container.site-content
+            .row
+                // THE POST
+                section#main-content(role="main").col-md-9.col-lg-9.col-sm-12.col-xs-12
+                    // STICKY POST
+                    article.post.post-2-column.sticky
+                        .post-meta-aside 
+                            .post-format
+                                i.icon-pushpin.icon-post-format  
+                            .post-date
+                                span.post-day 1 
+                                span.post-month September
+                                span.post-year 2013
+                        .the-post
+                            .post-excerpt
+                                h2.post-header 
+                                    a(href="")
+                                        | Post Format : Sticky, consectetuer adipiscing
+                                .post-content
+                                    p 
+                                        | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec ...
+                            .post-meta
+                                span.post-author
+                                    i.icon-user
+                                    a(href="http://") John William Doe
+                                .post-meta-dot-separator 
+                                    | .
+                                span.post-category
+                                    i.icon-circle-blank
+                                    a(href="http://") Tooklit
+                                    a(href="http://") Photography
+                                .post-meta-dot-separator 
+                                    | .
+                                span.post-tag
+                                    i.icon-tag
+                                    a(href="http://") Tooklit
+                                    a(href="http://") Photography
+
+                    // STANDARD POST
+                    article.post.post-2-column.format-standard
+                        .post-meta-aside  
+                            .post-format
+                                i.icon-pencil.icon-post-format
+                            .post-date
+                                span.post-day 2 
+                                span.post-month September
+                                span.post-year 2013
+                        .the-post
+                            .post-excerpt
+                                img(src="assets/images/blog.jpg", alt="blog image")
+                                h2.post-header 
+                                    a(href="")
+                                        | Post Format : Standard, Lorem ipsum dolor sit amet, consectetuer adipiscing
+                                .post-content
+                                    p 
+                                        | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec ...
+                            .post-meta
+                                span.post-author
+                                    i.icon-user
+                                    a(href="http://") John William Doe
+                                .post-meta-dot-separator 
+                                    | .
+                                span.post-category
+                                    i.icon-circle-blank
+                                    a(href="http://") Tooklit
+                                    a(href="http://") Photography
+                                .post-meta-dot-separator 
+                                    | .
+                                span.post-tag
+                                    i.icon-tag
+                                    a(href="http://") Tooklit
+                                    a(href="http://") Photography
+
+                    // POST WITH SPECIAL CHARACTER
+                    article.post.post-2-column.format-standard
+                        .post-meta-aside  
+                            .post-format
+                                i.icon-pencil.icon-post-format 
+                            .post-date
+                                span.post-day 3 
+                                span.post-month September
+                                span.post-year 2013
+                        .the-post
+                            .post-excerpt
+                                h2.post-header 
+                                    a(href="")
+                                        | Markup: Title With Special Characters ~`!@#$%^&*()-_=+{}[]/;:’”?,.>
+                                .post-content
+                                    p 
+                                        | Putting special characters in the title should have no adverse effect on the layout or functionality. Special characters in the post title have been known to cause issues with JavaScript when it is minified, especially in the admin when editing the post itself (ie. issues with metaboxes, media upload, etc.). ...
+                            .post-meta
+                                span.post-author
+                                    i.icon-user
+                                    a(href="http://") John William Doe
+                                .post-meta-dot-separator 
+                                    | .
+                                span.post-category
+                                    i.icon-circle-blank
+                                    a(href="http://") Tooklit
+                                    a(href="http://") Photography
+                                .post-meta-dot-separator 
+                                    | .
+                                span.post-tag
+                                    i.icon-tag
+                                    a(href="http://") Tooklit
+                                    a(href="http://") Photography
+
+                    // POST FULL WIDTH
+                    article.post.post-2-column.format-standard
+                        .post-meta-aside  
+                            .post-format
+                                i.icon-pencil.icon-post-format
+                            .post-date
+                                span.post-day 4 
+                                span.post-month September
+                                span.post-year 2013
+                        .the-post
+                            .post-excerpt
+                                h2.post-header 
+                                    a(href="")
+                                        | Full Width
+                                .post-content
+                                    p 
+                                        | Nullam vehicula dignissim turpis sed lobortis. Mauris ligula odio, faucibus in metus non, semper feugiat turpis. Aliquam vitae neque non ligula aliquam pellentesque quis nec nisi. Nunc eget erat lorem. Aliquam elementum convallis lectus, quis semper velit faucibus a. Aliquam in ante a nisl consequat ultrices. Duis ut consectetur ipsum. Nunc dignissim urna tristique mi semper fermentum. Ut auctor massa at orci posuere, sit amet suscipit ante vehicula. Curabitur auctor leo quis ullamcorper dignissim ...
+                            .post-meta
+                                span.post-author
+                                    i.icon-user
+                                    a(href="http://") John William Doe
+                                .post-meta-dot-separator 
+                                    | .
+                                span.post-category
+                                    i.icon-circle-blank
+                                    a(href="http://") Tooklit
+                                    a(href="http://") Photography
+                                .post-meta-dot-separator 
+                                    | .
+                                span.post-tag
+                                    i.icon-tag
+                                    a(href="http://") Tooklit
+                                    a(href="http://") Photography
+
+                    // POST PAGINATED
+                    article.post.post-2-column.format-standard
+                        .post-meta-aside  
+                            .post-format
+                                i.icon-pencil.icon-post-format
+                            .post-date
+                                span.post-day 5 
+                                span.post-month September
+                                span.post-year 2013
+                        .the-post
+                            .post-excerpt
+                                h2.post-header 
+                                    a(href="")
+                                        | Post : Paginated
+                                .post-content
+                                    p 
+                                        | Nullam vehicula dignissim turpis sed lobortis. Mauris ligula odio, faucibus in metus non, semper feugiat turpis. Aliquam vitae neque non ligula aliquam pellentesque quis nec nisi. Nunc eget erat lorem. Aliquam elementum convallis lectus, quis semper velit faucibus a. Aliquam in ante a nisl consequat ultrices. Duis ut consectetur ipsum ...
+                                .page-links
+                                    | Pages :
+                                    a(href="") 1
+                                    a(href="") 2
+                                    a(href="") 3
+                            .post-meta
+                                span.post-author
+                                    i.icon-user
+                                    a(href="http://") John William Doe
+                                .post-meta-dot-separator 
+                                    | .
+                                span.post-category
+                                    i.icon-circle-blank
+                                    a(href="http://") Tooklit
+                                    a(href="http://") Photography
+                                .post-meta-dot-separator 
+                                    | .
+                                span.post-tag
+                                    i.icon-tag
+                                    a(href="http://") Tooklit
+                                    a(href="http://") Photography
+
+                    // POST PASSWORD PROTECTED
+                    article.post.post-2-column.format-standard
+                        .post-meta-aside  
+                            .post-format
+                                i.icon-pencil.icon-post-format
+                            .post-date
+                                span.post-day 6 
+                                span.post-month September
+                                span.post-year 2013
+                        .the-post
+                            .post-excerpt
+                                h2.post-header 
+                                    a(href="")
+                                        | Protected: Template: Password Protected (the password is “enter”)
+                                .post-content
+                                    p 
+                                        | This post is password protected. To view it please enter your password below:
+                                    p
+                                        form.form-inline
+                                            .form-group
+                                                input(type="password", placeholder="Password").form-control.input-sm
+                                            button(type="submit").btn.btn-primary.btn-sm Submit
+                            .post-meta
+                                span.post-author
+                                    i.icon-user
+                                    a(href="http://") John William Doe
+                                .post-meta-dot-separator 
+                                    | .
+                                span.post-category
+                                    i.icon-circle-blank
+                                    a(href="http://") Tooklit
+                                    a(href="http://") Photography
+                                .post-meta-dot-separator 
+                                    | .
+                                span.post-tag
+                                    i.icon-tag
+                                    a(href="http://") Tooklit
+                                    a(href="http://") Photography
+
+                    // POST WITH COMMENT
+                    article.post.post-2-column.format-standard
+                        .post-meta-aside  
+                            .post-format
+                                i.icon-pencil.icon-post-format
+                            .post-date
+                                span.post-day 7 
+                                span.post-month September
+                                span.post-year 2013
+                        .the-post
+                            .post-excerpt
+                                h2.post-header 
+                                    a(href="")
+                                        | Post with comments
+                                .post-content
+                                    p 
+                                        | This post tests comments in the following ways.
+                                    ul 
+                                        li Threaded comments up to 10 levels deep
+                                        li Paginated comments (set Settings &rarr; Discussion &rarr; Break comments into pages to 5 top level comments per page)
+                                        li Comment markup / formatting
+                                        li Comment images
+                                        li Comment videos
+                                        li Author comments
+                                        li Gravatars and default fallbacks
+                            .post-meta
+                                span.post-author
+                                    i.icon-user
+                                    a(href="http://") John William Doe
+                                .post-meta-dot-separator 
+                                    | .
+                                span.post-category
+                                    i.icon-circle-blank
+                                    a(href="http://") Tooklit
+                                    a(href="http://") Photography
+                                .post-meta-dot-separator 
+                                    | .
+                                span.post-tag
+                                    i.icon-tag
+                                    a(href="http://") Tooklit
+                                    a(href="http://") Photography
+
+                    // POST WITHOUT COMMENT
+                    article.post.post-2-column.format-standard
+                        .post-meta-aside  
+                            .post-format
+                                i.icon-pencil.icon-post-format
+                            .post-date
+                                span.post-day 8 
+                                span.post-month September
+                                span.post-year 2013
+                        .the-post
+                            .post-excerpt
+                                h2.post-header 
+                                    a(href="")
+                                        | Post with comments disabled
+                                .post-content
+                                    p 
+                                        | This post has its comments, pingbacks, and trackbacks disabled.
+                                    p 
+                                        | There should be no comment reply form, but should display pingbacks and trackbacks.
+                            .post-meta
+                                span.post-author
+                                    i.icon-user
+                                    a(href="http://") John William Doe
+                                .post-meta-dot-separator 
+                                    | .
+                                span.post-category
+                                    i.icon-circle-blank
+                                    a(href="http://") Tooklit
+                                    a(href="http://") Photography
+                                .post-meta-dot-separator 
+                                    | .
+                                span.post-tag
+                                    i.icon-tag
+                                    a(href="http://") Tooklit
+                                    a(href="http://") Photography
+
+                    // POST PINGBACKS AND TRACKBACKS
+                    article.post.post-2-column.format-standard
+                        .post-meta-aside  
+                            .post-format
+                                i.icon-pencil.icon-post-format
+                            .post-date
+                                span.post-day 9 
+                                span.post-month September
+                                span.post-year 2013
+                        .the-post
+                            .post-excerpt
+                                h2.post-header 
+                                    a(href="")
+                                        | Post with Pingbacks And Trackbacks
+                                .post-content
+                                    p 
+                                        | This post has many pingpacks and trackbacks.
+                                    p 
+                                        | There are a few ways to list them.
+                                    ol 
+                                        li Above the comments
+                                        li Below the comments
+                                        li Included within the normal flow of comments
+                            .post-meta
+                                span.post-author
+                                    i.icon-user
+                                    a(href="http://") John William Doe
+                                .post-meta-dot-separator 
+                                    | .
+                                span.post-category
+                                    i.icon-circle-blank
+                                    a(href="http://") Tooklit
+                                    a(href="http://") Photography
+                                .post-meta-dot-separator 
+                                    | .
+                                span.post-tag
+                                    i.icon-tag
+                                    a(href="http://") Tooklit
+                                    a(href="http://") Photography
+
+                    // POST TWITTER EMBEDDED
+                    article.post.post-2-column.format-standard
+                        .post-meta-aside  
+                            .post-format
+                                i.icon-pencil.icon-post-format
+                            .post-date
+                                span.post-day 10 
+                                span.post-month September
+                                span.post-year 2013
+                        .the-post
+                            .post-excerpt
+                                h2.post-header 
+                                    a(href="")
+                                        | Post with Twitter Embedded
+                                .post-content
+                                    p 
+                                        | This post tests WordPress’ <a href="">Twitter Embeds</a>&nbsp; feature.
+                            .post-meta
+                                span.post-author
+                                    i.icon-user
+                                    a(href="http://") John William Doe
+                                .post-meta-dot-separator 
+                                    | .
+                                span.post-category
+                                    i.icon-circle-blank
+                                    a(href="http://") Tooklit
+                                    a(href="http://") Photography
+                                .post-meta-dot-separator 
+                                    | .
+                                span.post-tag
+                                    i.icon-tag
+                                    a(href="http://") Tooklit
+                                    a(href="http://") Photography
+
+                    // POST FORMAT GALLERY 1
+                    article.post.post-2-column.format-gallery
+                        .post-meta-aside  
+                            .post-format
+                                i.icon-camera.icon-post-format
+                            .post-date
+                                span.post-day 11 
+                                span.post-month September
+                                span.post-year 2013
+                        .the-post
+                            .post-excerpt
+                                .images-slider
+                                    ul
+                                        li
+                                            a(href="")
+                                                img(src="assets/images/blog2.jpg", alt="blog image")
+                                        li
+                                            a(href="")
+                                                img(src="assets/images/blog2.jpg", alt="blog image")
+                                    .images-slider-nav
+                                        a.images-slider-nav-prev(href="")
+                                            i.icon-chevron-left
+                                        a.images-slider-nav-next(href="")
+                                            i.icon-chevron-right
+                                h2.post-header 
+                                    a(href="")
+                                        | Post Format : Gallery, With Slider
+                                .post-content
+                                    p 
+                                        | Vestibulum quam metus, dictum quis urna nec, fermentum ultricies diam. Aliquam nec sem augue. Duis eros justo, bibendum ac euismod non, posuere blandit dui. Ut justo urna, sagittis sit amet magna ac, vestibulum imperdiet velit. Curabitur pharetra vehicula mi
+                            .post-meta
+                                span.post-author
+                                    i.icon-user
+                                    a(href="http://") John William Doe
+                                .post-meta-dot-separator 
+                                    | .
+                                span.post-category
+                                    i.icon-circle-blank
+                                    a(href="http://") Tooklit
+                                    a(href="http://") Photography
+                                .post-meta-dot-separator 
+                                    | .
+                                span.post-tag
+                                    i.icon-tag
+                                    a(href="http://") Tooklit
+                                    a(href="http://") Photography
+
+                    // POST FORMAT GALLERY 2
+                    article.post.post-2-column.format-gallery
+                        .post-meta-aside  
+                            .post-format
+                                i.icon-camera.icon-post-format
+                            .post-date
+                                span.post-day 12 
+                                span.post-month September
+                                span.post-year 2013
+                        .the-post
+                            .post-excerpt
+                                img(src="assets/images/blog3.jpg", alt="blog image")
+                                h2.post-header 
+                                    a(href="")
+                                        | Post Format : Gallery, With Other Images Tiled
+                                .post-content
+                                    p 
+                                        | Vestibulum quam metus, dictum quis urna nec, fermentum ultricies diam. Aliquam nec sem augue. Duis eros justo, bibendum ac euismod non, posuere blandit dui. Ut justo urna, sagittis sit amet magna ac, vestibulum imperdiet velit. Curabitur pharetra vehicula mi
+                            .post-meta
+                                span.post-author
+                                    i.icon-user
+                                    a(href="http://") John William Doe
+                                .post-meta-dot-separator 
+                                    | .
+                                span.post-category
+                                    i.icon-circle-blank
+                                    a(href="http://") Tooklit
+                                    a(href="http://") Photography
+                                .post-meta-dot-separator 
+                                    | .
+                                span.post-tag
+                                    i.icon-tag
+                                    a(href="http://") Tooklit
+                                    a(href="http://") Photography
+
+                // SIDEBAR WIDGETS
+                aside.col-md-3.col-lg-3.col-sm-12.col-xs-12.sidebar-widget(role="complementary")
+                    mixin widget-categories
+                    mixin widget-search
+                    mixin widget-popular-post
+                    mixin widget-tags
+                    mixin widget-woo-featured-products
+                    mixin widget-recent-comments
+                    mixin widget-link-icons
+                    mixin widget-woo-best-sellers
+                    mixin widget-woo-product-categories
+                    mixin widget-woo-new-products
+
+    // FOOTER WIDGETS
+    aside.region.footer-widgets.base-invert(role="complementary")
+        .container
+            .row
+                .col-md-4.col-lg-4.col-sm-12.col-xs-12
+                    mixin widget-about
+                .col-md-2.col-lg-2.col-sm-6.col-xs-6
+                    mixin widget-categories
+                .col-md-2.col-lg-2.col-sm-6.col-xs-6
+                    mixin widget-link
+                .col-md-4.col-lg-4.col-sm-12.col-xs-12
+                    mixin widget-newsletter 
+                    mixin widget-woo-featured-products

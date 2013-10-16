@@ -1,0 +1,120 @@
+{{!< default}}
+<div id="main-wrapper">
+    </article>
+    <!-- MAIN CONTENT AREA-->
+    <section id="main-content-area" class="region reset-vertical-gap">
+        <div class="site-content container-full">
+            <!-- MAIN CONTENT-->
+            <section id="main-content" role="main" class="full-width-post">
+                <!-- ARTICLE-->
+
+                {{! Everything inside the #post tags pulls data from the post }}
+                {{#post}}
+
+                <article class="post post-2-column {{post_class}}">
+                    <!-- THE POST-->
+                    <div class="the-post">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-md-offset-2">
+                                    <!-- POST FORMAT ICON-->
+                                    <div class="post-meta-aside">
+                                        <div class="post-format"><i class="icon-bookmark-empty icon-post-format"></i>
+                                        </div>
+                                    </div>
+                                    <!-- POST DATE & POST AUTHOR-->
+                                    <div class="post-meta">
+                                        <div class="post-date">
+
+                                            <time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time>
+                                        
+                                        </div>
+                                        <div class="post-meta-dot-separator">.</div>
+                                        <span class="post-author">
+                                            {{author.name}}
+                                        </span>
+                                    </div>
+                                    <!-- POST TITLE-->
+                                    <header>
+
+                                        <h1>{{{title}}}</h1>
+                                    
+                                    </header>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                        <!-- ABOUT THE AUTHOR & LEFT META INFOS-->
+                                        <section class="in-post meta">
+                                            <h4 class="half-stretched">About The Author</h4>
+                                            <div class="meta content">
+                                                <div class="meta author">
+                                                    <img src="{{author.image}}" alt="avatar" class="author avatar small pull-left">
+                                                    <div class="author name">{{author.name}}</div>
+                                                    <br>
+                                                    <p>{{author.bio}}</p>
+                                                    <strong>Connect with {{author.name}} :</strong>
+                                                    <br>
+                                                    <div class="author social">
+                                                        <a href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"><i class="icon-twitter"></i>
+                                                        </a>
+                                                        <a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><i class="icon-facebook"></i>
+                                                        </a>
+                                                        <a href="https://plus.google.com/share?url={{url absolute="true"}}" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;"><i class="icon-google-plus"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        {{content}}
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                        <!-- SHARE POSTS-->
+                                        <section class="in-post meta">
+                                            <h4 class="half-stretched">Share this post</h4>
+                                            <div class="meta content">
+                                                <div class="meta social">
+                                                    <a href=""><i class="icon-twitter"></i>
+                                                    </a>
+                                                    <a href=""><i class="icon-facebook"></i>
+                                                    </a>
+                                                    <a href=""><i class="icon-google-plus"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </section>
+
+                                        <!-- POST TAGS-->
+                                        <section class="in-post meta">
+                                            <h4 class="half-stretched">Tags</h4>
+                                            <div class="meta content">
+                                                <p class="meta taxonomy">
+                                                    {{#if tags}}
+                                                        {{tags separator=", "}}
+                                                    {{/if}}
+                                                </p>
+                                            </div>
+                                        </section>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                {{/post}}
+
+            </section>
+        </div>
+    </section>
+</div>
+
+<!-- FOOTER-->
+{{> footer}}

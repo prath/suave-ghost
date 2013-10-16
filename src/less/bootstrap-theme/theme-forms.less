@@ -1,0 +1,50 @@
+// -----------------------------------------------------------------
+// * [Theme Forms]
+// * 
+// * @project Suave Wordpress Theme
+// * @version 1.0.0
+// * 
+// * @author Dwi A. Hambali <dwi.asharialdy@gmail.com>
+// * @author Pratama H. Salahudin <pratama@hasriyan.com>
+// -----------------------------------------------------------------
+
+.form-control {
+    background-color: transparent;
+    border-color: lighten(@default-text, 15%);
+
+    height: 38px;
+
+    color: @default-text;
+    font-family: @font-1;
+    font-size: @body-fz-df ;
+    line-height: @line-height-base;
+
+    border-radius: @base-radius;
+    box-shadow: none;
+
+    .placeholder(@color: @default-text);
+    &:focus {
+        border-color: @btn-info;
+
+        box-shadow: none;
+    }
+}
+
+.form-inline {
+    .form-control {
+        margin-top: -2px;
+    }
+}
+
+.form-group {
+    margin-bottom: 5px;
+}
+
+.input-sm {
+    height: 27px;
+
+    padding: 5px 10px;
+    
+    font-size: @body-fz-sm;
+    line-height: @line-height-narrow;
+}

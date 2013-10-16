@@ -1,0 +1,853 @@
+/*------------------------------------------------------------------
+ [Table of contents]
+--------------------------------------------------------------------
+ 1. Type
+ 2. Tables
+ 3. Forms
+ 4. Buttons
+ 5. Dropdowns
+ 6. Navbar
+ 7. Breadcrumbs
+ 8. Thumbnails
+ 9. Panels
+------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+ [1. Type]
+------------------------------------------------------------------*/
+
+h1 {
+  font-size: 48px;
+  font-weight: 400;
+  letter-spacing: -1px;
+  line-height: 54px;
+}
+
+h2 {
+  font-size: 30px;
+  letter-spacing: -1px;
+  line-height: 36px;
+}
+
+h3 {
+  font-size: 21px;
+  letter-spacing: 0px;
+  line-height: 25px;
+}
+
+h4 {
+  font-size: 18px;
+  letter-spacing: 0px;
+}
+
+h5 {
+  font-size: 16px;
+  letter-spacing: 0px;
+}
+
+h6 {
+  font-size: 14px;
+  letter-spacing: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #444444;
+  font-family: "Roboto Slab";
+}
+
+h2,
+h3 {
+  font-weight: 400;
+}
+
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+h1 {
+  margin-bottom: 50px;
+}
+
+h2 {
+  margin-bottom: 30px;
+}
+
+h3 {
+  margin-bottom: 20px;
+}
+
+blockquote {
+  border-left: 0px;
+}
+
+dl {
+  margin: 0px 20px 20px;
+}
+
+dl dd {
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+/*------------------------------------------------------------------
+ [2. Tables]
+------------------------------------------------------------------*/
+
+th,
+td {
+  padding: 10px;
+}
+
+.table-bordered {
+  border: 1px solid #ededed;
+}
+
+.table-bordered thead > tr > th,
+.table-bordered tbody > tr > th,
+.table-bordered tfoot > tr > th,
+.table-bordered thead > tr > td,
+.table-bordered tbody > tr > td,
+.table-bordered tfoot > tr > td {
+  border: 1px solid #ededed;
+}
+
+table thead > tr > th,
+.table thead > tr > th,
+table thead > tr > td,
+.table thead > tr > td {
+  border-bottom: 2px solid #f7c2bd;
+}
+
+table tbody > tr > th,
+.table tbody > tr > th,
+table tfoot > tr > th,
+.table tfoot > tr > th,
+table tbody > tr > td,
+.table tbody > tr > td,
+table tfoot > tr > td,
+.table tfoot > tr > td {
+  border-top: 1px solid #ededed;
+}
+
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th {
+  background-color: #fef9f8;
+}
+
+.table-striped tbody > tr > th,
+.table-striped tfoot > tr > th,
+.table-striped tbody > tr > td,
+.table-striped tfoot > tr > td {
+  border-top: 1px solid #fceceb;
+}
+
+.table-hover > tbody > tr:hover > td,
+.table-hover > tbody > tr:hover > th {
+  background-color: #fef9f8;
+}
+
+/*------------------------------------------------------------------
+ [3. Forms]
+------------------------------------------------------------------*/
+
+.form-control {
+  background-color: transparent;
+  border-color: #a2a2a2;
+  height: 38px;
+  color: #7c7c7c;
+  font-family: "Noto Sans";
+  font-size: 13px;
+  line-height: 20px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.form-control:-moz-placeholder {
+  color: #7c7c7c;
+}
+
+.form-control::-moz-placeholder {
+  color: #7c7c7c;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #7c7c7c;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #7c7c7c;
+}
+
+.form-control:-moz-placeholder {
+  color: #7c7c7c;
+}
+
+.form-control::-moz-placeholder {
+  color: #7c7c7c;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #7c7c7c;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #7c7c7c;
+}
+
+.form-control:focus {
+  border-color: #3d9fe4;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.form-inline .form-control {
+  margin-top: -2px;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+
+.input-sm {
+  height: 27px;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+/*------------------------------------------------------------------
+ [4. Buttons]
+------------------------------------------------------------------*/
+
+/* [Buttons]
+-------------------------------------------------------------------*/
+
+.btn {
+  background-color: transparent;
+  padding: 3px 15px;
+  margin-top: -2px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 36px;
+  -webkit-transition: all .8s ease;
+  -o-transition: all .8s ease;
+  transition: all .8s ease;
+  border: 1px solid #444444;
+  color: #444444;
+  font-family: "Noto Sans";
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.btn:hover {
+  background-color: transparent;
+  -webkit-transition: all .8s ease;
+  -o-transition: all .8s ease;
+  transition: all .8s ease;
+}
+
+.btn:focus,
+.btn.focus,
+.btn:active,
+.btn.active {
+  margin-top: 0px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.btn:hover {
+  border-color: #000000;
+  color: #000000;
+}
+
+.btn:focus,
+.btn.focus,
+.btn:active,
+.btn.active {
+  border-color: #6a6a6a;
+  color: #6a6a6a;
+}
+
+.btn.btn-default {
+  border: 1px solid #444444;
+  color: #444444;
+  font-family: "Noto Sans";
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.btn.btn-default:hover {
+  border-color: #000000;
+  color: #000000;
+}
+
+.btn.btn-default:focus,
+.btn.btn-default.focus,
+.btn.btn-default:active,
+.btn.btn-default.active {
+  border-color: #6a6a6a;
+  color: #6a6a6a;
+}
+
+.btn.btn-primary {
+  border: 1px solid #ff7755;
+  color: #ff7755;
+  font-family: "Noto Sans";
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.btn.btn-primary:hover {
+  border-color: #000000;
+  color: #000000;
+}
+
+.btn.btn-primary:focus,
+.btn.btn-primary.focus,
+.btn.btn-primary:active,
+.btn.btn-primary.active {
+  border-color: #ffb4a2;
+  color: #ffb4a2;
+}
+
+.btn.btn-success {
+  border: 1px solid #87ac24;
+  color: #87ac24;
+  font-family: "Noto Sans";
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.btn.btn-success:hover {
+  border-color: #000000;
+  color: #000000;
+}
+
+.btn.btn-success:focus,
+.btn.btn-success.focus,
+.btn.btn-success:active,
+.btn.btn-success.active {
+  border-color: #b0d845;
+  color: #b0d845;
+}
+
+.btn.btn-info {
+  border: 1px solid #3d9fe4;
+  color: #3d9fe4;
+  font-family: "Noto Sans";
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.btn.btn-info:hover {
+  border-color: #000000;
+  color: #000000;
+}
+
+.btn.btn-info:focus,
+.btn.btn-info.focus,
+.btn.btn-info:active,
+.btn.btn-info.active {
+  border-color: #80c0ed;
+  color: #80c0ed;
+}
+
+.btn.btn-warning {
+  border: 1px solid #f69f24;
+  color: #f69f24;
+  font-family: "Noto Sans";
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.btn.btn-warning:hover {
+  border-color: #000000;
+  color: #000000;
+}
+
+.btn.btn-warning:focus,
+.btn.btn-warning.focus,
+.btn.btn-warning:active,
+.btn.btn-warning.active {
+  border-color: #f9bf6d;
+  color: #f9bf6d;
+}
+
+.btn.btn-danger {
+  border: 1px solid #e50808;
+  color: #e50808;
+  font-family: "Noto Sans";
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.btn.btn-danger:hover {
+  border-color: #000000;
+  color: #000000;
+}
+
+.btn.btn-danger:focus,
+.btn.btn-danger.focus,
+.btn.btn-danger:active,
+.btn.btn-danger.active {
+  border-color: #f84141;
+  color: #f84141;
+}
+
+.btn.btn-link {
+  border: 1px solid #ff7755;
+  color: #ff7755;
+  font-family: "Noto Sans";
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: none;
+}
+
+.btn.btn-link:hover {
+  border-color: #000000;
+  color: #000000;
+}
+
+.btn.btn-link:focus,
+.btn.btn-link.focus,
+.btn.btn-link:active,
+.btn.btn-link.active {
+  border-color: #ffb4a2;
+  color: #ffb4a2;
+}
+
+.btn.btn-link:hover {
+  text-decoration: none;
+}
+
+.btn.btn-inverse {
+  border: 1px solid #a5a5a5;
+  color: #a5a5a5;
+  font-family: "Noto Sans";
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.btn.btn-inverse:hover {
+  border-color: #000000;
+  color: #000000;
+}
+
+.btn.btn-inverse:focus,
+.btn.btn-inverse.focus,
+.btn.btn-inverse:active,
+.btn.btn-inverse.active {
+  border-color: #5e5e5e;
+  color: #5e5e5e;
+}
+
+.btn.btn-white {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-family: "Noto Sans";
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.btn.btn-white:hover {
+  border-color: #4d4d4d;
+  color: #4d4d4d;
+}
+
+.btn.btn-white:focus,
+.btn.btn-white.focus,
+.btn.btn-white:active,
+.btn.btn-white.active {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.btn.btn-cta {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-family: "Noto Sans";
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border-left: 1px solid #ff7755;
+  padding: 0 30px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 54px;
+  text-transform: uppercase;
+}
+
+.btn.btn-cta:hover {
+  border-color: #4d4d4d;
+  color: #4d4d4d;
+}
+
+.btn.btn-cta:focus,
+.btn.btn-cta.focus,
+.btn.btn-cta:active,
+.btn.btn-cta.active {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.btn.btn-cta:hover {
+  background-color: transparent;
+  border: 1px solid #ff7755;
+  color: #ff7755;
+}
+
+.btn.btn-lg {
+  padding: 0 30px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 54px;
+}
+
+.btn.btn-sm {
+  padding: 0 10px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+.btn.btn-xs {
+  padding: 2px 5px;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 15px;
+}
+
+.btn-group > .btn,
+.btn-group > .popover {
+  font-size: 10px;
+}
+
+/*------------------------------------------------------------------
+ [5. Dropdowns]
+------------------------------------------------------------------*/
+
+.dropdown-menu {
+  background-color: #3b434c;
+  border: none;
+  top: 100%;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}
+
+.dropdown-menu > li > a {
+  border-left: 5px solid #eb6f63;
+  width: 160px;
+  padding: 10px 20px;
+  color: #c3ccd7;
+  font-family: "Maven Pro";
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.dropdown-menu .divider {
+  background-color: #515c69;
+  border-bottom: none;
+}
+
+.navbar-default .navbar-nav .dropdown-menu > li > a:hover {
+  background-color: #eb6f63;
+  background-image: none;
+  color: #fff;
+}
+
+.dropup .dropdown-menu {
+  margin-bottom: 10px;
+}
+
+/*------------------------------------------------------------------
+ [6. Navbar]
+------------------------------------------------------------------*/
+
+.navbar {
+  min-height: 30px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}
+
+.navbar.main-navigation {
+  left: 0;
+  right: 0;
+}
+
+.navbar.main-navigation.navbar-absolute-bottom {
+  position: absolute;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    min-height: 50px;
+  }
+
+  .navbar > .container {
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+}
+
+.navbar-default {
+  background-color: #30363e;
+  border: 0px;
+}
+
+.navbar-default .navbar-brand {
+  color: #eb6f63;
+}
+
+.navbar-default .navbar-brand:hover {
+  color: #ffffff;
+}
+
+.navbar-default .navbar-nav li a {
+  color: #ffffff;
+}
+
+.navbar-default .navbar-nav li:hover > a {
+  color: #eb6f63;
+}
+
+.navbar-default .navbar-nav > .active > a {
+  background-color: transparent;
+  color: #eb6f63;
+}
+
+.navbar-default .navbar-nav > .active > a:hover {
+  background-color: transparent;
+  color: #eb6f63;
+}
+
+.navbar-default .navbar-nav > .dropup.open > .dropdown-toggle {
+  background: none;
+}
+
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a.focus,
+.navbar-default .navbar-nav > .open > a:active,
+.navbar-default .navbar-nav > .open > a.active {
+  background-color: transparent;
+  color: #eb6f63;
+}
+
+.navbar-transparent {
+  background-color: rgba(59, 67, 76, 0.5);
+}
+
+.navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: "Maven Pro";
+  font-size: 21px;
+  font-weight: 400;
+  letter-spacing: -1px;
+  text-shadow: none;
+}
+
+.navbar-brand > img {
+  height: 30px;
+  width: 28px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-brand > img {
+    height: 40px;
+    width: 38px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-brand {
+    font-size: 21px;
+  }
+}
+
+.brand-tagline {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  /* Fix for IE7 */
+  vertical-align: top;
+  line-height: 40px;
+}
+
+.navbar-toggle {
+  padding: 4px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.navbar-nav > li {
+  margin: 0 0 0 50px;
+}
+
+.navbar-nav > li > a {
+  padding: 0;
+  font-size: 12px;
+  font-family: "Maven Pro";
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 40px;
+}
+
+.navbar-nav > li.dropdown.open > .dropdown-toggle {
+  background: none;
+}
+
+.navbar-nav > li.dropdown i,
+.navbar-nav > li.dropup i {
+  margin-left: 5px;
+}
+
+.navbar-nav > li > .dropdown-menu:before,
+.navbar-nav > li > .dropdown-menu:after {
+  border: 0px;
+}
+
+.navbar .nav > li .dropdown-menu {
+  opacity: 0;
+  margin-top: -20px;
+}
+
+.navbar .nav > li.open > .dropdown-menu {
+  margin-top: 10px;
+  opacity: 1;
+  -webkit-transition: margin 0.3s ease;
+  -o-transition: margin 0.3s ease;
+  transition: margin 0.3s ease;
+}
+
+.menu-nav i {
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.droppable.nav {
+  background-color: rgba(235, 111, 99, 0.95);
+  display: none;
+  position: fixed;
+  z-index: 99;
+  height: 100%;
+  width: 100%;
+  padding: 100px 100px 170px;
+  color: #ffffff;
+  text-align: center;
+  overflow-y: scroll;
+}
+
+.droppable.nav .content-divider {
+  border-color: #f7c2bd;
+}
+
+.droppable.nav .content-divider .stretched {
+  background-color: #fceceb;
+}
+
+/*------------------------------------------------------------------
+ [7. Breadcrumbs]
+------------------------------------------------------------------*/
+
+.breadcrumb {
+  background-color: transparent;
+  padding: 0px;
+  margin-bottom: 0px;
+}
+
+.breadcrumb > li a {
+  color: #a0a0a0;
+  font-size: 12px;
+}
+
+.breadcrumb > li a:hover {
+  color: #eb6f63;
+}
+
+.breadcrumb > li + li:before {
+  content: "\00BB\00a0";
+  color: #f9d7d4;
+  font-size: 11px;
+}
+
+.breadcrumb > .active a {
+  color: #eb6f63;
+}
+
+.breadcrumb > .active a:hover {
+  color: #a0a0a0;
+}
+
+/*------------------------------------------------------------------
+ [8. Thumbnails]
+------------------------------------------------------------------*/
+
+.thumbnail,
+.img-thumbnail {
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
+}
+
+.thumbnail {
+  border: 0px;
+  padding: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.thumbnail h1,
+.thumbnail h2,
+.thumbnail h3,
+.thumbnail h4,
+.thumbnail h5,
+.thumbnail h6 {
+  margin-bottom: 10px;
+}
+
+.thumbnail h1 a,
+.thumbnail h2 a,
+.thumbnail h3 a,
+.thumbnail h4 a,
+.thumbnail h5 a,
+.thumbnail h6 a {
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.thumbnail h1 a:hover,
+.thumbnail h2 a:hover,
+.thumbnail h3 a:hover,
+.thumbnail h4 a:hover,
+.thumbnail h5 a:hover,
+.thumbnail h6 a:hover {
+  color: #eb6f63;
+}
+
+/*------------------------------------------------------------------
+ [9. Panels]
+------------------------------------------------------------------*/

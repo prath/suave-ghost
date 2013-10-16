@@ -1,0 +1,103 @@
+// -----------------------------------------------------------------
+// * [Portfolio Styles]
+// * 
+// * @project Suave Wordpress Theme
+// * @version 1.0.0
+// * 
+// * @author Dwi A. Hambali <dwi.asharialdy@gmail.com>
+// * @author Pratama H. Salahudin <pratama@hasriyan.com>
+// -----------------------------------------------------------------
+
+/* [Full Page Portfolio Slide Images]
+-------------------------------------------------------------------*/
+/*-----[Slider Container]-----*/
+.portfolio-slider-full {
+    border-radius: 0px;
+
+    margin-bottom: 0px;
+
+    //*-----[Responsive 768++]-----*/
+    @media screen and (min-width: 768px) {
+        height: 400px;
+    }
+    .images-slider-nav {
+        &-prev {
+            border-bottom-left-radius: 0px;
+        }
+        &-next {
+            border-bottom-right-radius: 0px;
+        }
+    }
+    ul {
+        //*-----[Responsive 600++]-----*/
+        @media screen and (min-width: 600px) {
+            width: 1000%;
+        }
+        
+        > li {
+            //*-----[Responsive 600++]-----*/
+            @media screen and (min-width: 600px) {
+                height: 200px;
+                width: 300px;
+            }
+
+            //*-----[Responsive 768++]-----*/
+            @media screen and (min-width: 768px) {
+                height: 400px;
+                width: 600px;
+            }
+
+            img {
+                transition: all 1.5s ease;
+
+                //*-----[Responsive 600++]-----*/
+                @media screen and (min-width: 600px) {
+                    height: 200px;
+                    width: 300px
+                }
+
+                //*-----[Responsive 768++]-----*/
+                @media screen and (min-width: 768px) {
+                    height: 400px;
+                    width: 600px
+                }
+
+            }
+            &:hover {
+                img {
+                    opacity: 0.2;
+                }
+            }
+
+            &:hover {
+                .portfolio-info {
+                    display: block;
+
+                    top: 30%;
+
+                    transition: top .6s ease;
+                }
+            }
+        }
+    }
+}
+
+.portfolio-info {
+    display: block;
+
+    position: absolute;
+    top: 600px;
+
+    height: 100%;
+    width: 100%;
+
+    text-align: center;
+
+    transition: top .6s ease;
+    h4 {
+        color: @default-background;
+    }
+    a {
+        margin-top: 30px;
+    }
+}

@@ -1,0 +1,20 @@
+{{!< default}}
+<div id="main-wrapper">
+    <!-- CONTENT-->
+    <!-- HEADLINE-->
+    <div {{#if @blog.cover}}style="background-image: url({{@blog.cover}}); background-attachment: fixed; background-size:cover"{{/if}} class="headline">
+        <div class="container-full">
+            {{#foreach posts}}
+                {{#if @first}}
+            <section class="vertically-centered hero-unit">
+                <header>
+                    <h1>{{title}}</h1>
+                </header>
+                <p>{{excerpt}}</p>
+            </section>
+            <a href="{{url}}" class="btn btn-primary btn-lg btn-cta">Read More</a>
+                {{/if}}
+            {{/foreach}}
+        </div>
+    </div>
+</div>

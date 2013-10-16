@@ -1,0 +1,221 @@
+//- 
+    =====================================================================
+    * Index Page
+    * 
+    * @author Pratama H. Salahudin <pratama@hasriyan.com>
+    =====================================================================
+
+extends inc/master
+
+//- title
+block title
+    title Suave - Minimalist Business Theme for Bootstrap
+
+//- content
+block content
+    // HEADLINE
+    
+    .headline(style='background-image: url(assets/images/top_view.jpg); background-attachment: fixed; background-size:cover')
+        //- div.cover-overlay
+        .container
+            section.vertically-centered.hero-unit
+                header
+                    // LOGO
+                    .logo-big
+                        img(src="assets/images/logo-big1.png", alt="suave logo")
+                    h1 Introducing: Suave
+                p
+                    | Multipurpose WordPress Theme.
+                    | Built with simplicity and flexibility in mind.
+                // CTA
+                p
+                    a.btn.btn-primary.btn-lg.btn-cta Buy Now 
+            
+    // OUR SERVICES
+    section.region.services
+        // SERVICES
+        .container.narrow
+            .copy-center
+                h1
+                    | Suave WordPress Theme.
+                p.sub-copy.shrunk
+                    | Suave is multipurpose WordPress theme that built with flexibility in mind. it suits best for your any kind of Businesses. 
+
+            .content-divider
+                h2.stretched Theme Features
+
+            .row
+                article.col-md-4.col-lg-4.col-sm-4.col-xs-12.copy-center
+                    img.service-images(src="assets/images/feature-1.jpg", alt="")
+                    .service-content
+                        header
+                            h4.capitalized Carefully Designed
+                        div
+                            p.
+                                Here's the story of a lovely lady who was bringing up three very lovely girls story of a lovely.
+                article.col-md-4.col-lg-4.col-sm-4.col-xs-12.copy-center
+                    img.service-images(src="assets/images/feature-2.jpg", alt="")
+                    .service-content
+                        header
+                            h4.capitalized Hand-coded Theme
+                        div
+                            p.
+                                Said Californ'y is the place you ought to be So they loaded up the truck and moved to Beverly.
+                article.col-md-4.col-lg-4.col-sm-4.col-xs-12.copy-center
+                    img.service-images(src="assets/images/feature-3.jpg", alt="")
+                    .service-content
+                        header
+                            h4.capitalized Mobile &amp; Tablet Optimized
+                        div
+                            p.
+                                The movie star the professor and Mary Ann here on Gilligans Isle professor and Mary Ann
+
+    // PORTFOLIO
+    section.region.reset-vertical-gap.container.container-full
+        // HEADING ALTERNATIVE
+        header.heading-alt
+            .container
+                h3 Portfolio
+                p.sub-copy
+                    | Our latest and proudest works and projects.
+                .pull-right.icon-action
+                    a(href="")
+                        i.icon-external-link
+        // PORTFOLIO SLIDER
+        .images-slider.portfolio-slider-full
+            ul
+                li
+                    img(src="assets/images/porto3.jpg", alt="item 1")
+                    .portfolio-info
+                        h4.half-stretched Lorem Ipsum Dolor Sit Amet 
+                        a.btn.btn-white(href="") See Project
+                li
+                    img(src="assets/images/porto2.jpg", alt="item 1")
+                    .portfolio-info
+                        h4.half-stretched The movie star the professor
+                        a.btn.btn-white(href="") See Project
+                li
+                    img(src="assets/images/porto1.jpg", alt="item 1")
+                    .portfolio-info
+                        h4.half-stretched Dynamically innovate resource-leveling
+                        a.btn.btn-white(href="") See Project
+            // PORTFOLIO SLIDER NAV
+            .images-slider-nav
+                a.images-slider-nav-prev(href="")
+                    i.icon-chevron-left
+                a.images-slider-nav-next(href="")
+                    i.icon-chevron-right
+
+    // RECENT POST
+    section.region.reset-vertical-gap
+        // HEADING ALTERNATIVE
+        header.heading-alt
+            .container
+                h3 Recent Posts
+                p.sub-copy
+                    | Our Thoughts on Many Things
+                .pull-right.icon-action
+                    a(href="")
+                        i.icon-external-link
+        .container
+            .row.blog-posts.no-image.widen-vertical-outergap
+                .col-md-4.col-lg-4.col-sm-4
+                    article.thumbnail.post-thumbnail
+                        //- .post-thumbnail-image
+                            img(src="assets/images/porto2.jpg", alt="")
+                        .caption
+                            h4 
+                                a(href="") Link climb leg rub face on everything
+                            span.post-date
+                                | January, 1st 2013
+                            p.
+                                Celery seakale desert raisin taro wakame pea sprouts broccoli rabe courgette rock melon.
+                            a(href="").pull-right Read more&nbsp;
+                                i.icon-angle-right
+                .col-md-4.col-lg-4.col-sm-4
+                    article.thumbnail.post-thumbnail
+                        //- .post-thumbnail-image
+                            img(src="assets/images/porto1.jpg", alt="")
+                        .caption
+                            h4 
+                                a(href="") Bugger bag egg's old boy willy jolly scrote
+                            span.post-date
+                                | January, 1st 2013
+                            p.
+                                Pommy ipsum gallivanting around bit of a div chuffed chap stupendous gosh horses for courses.
+                            a(href="").pull-right Read more&nbsp;
+                                i.icon-angle-right
+                .col-md-4.col-lg-4.col-sm-4
+                    article.thumbnail.post-thumbnail
+                        //- .post-thumbnail-image
+                            img(src="assets/images/porto3.jpg", alt="")
+                        .caption
+                            h4 
+                                a(href="") Caerphilly swiss fromage frais brie cheese
+                            span.post-date
+                                | January, 1st 2013
+                            p.
+                                Roquefort cheese strings who moved my cheese. Blue castello brie goat when the cheese comes out.
+                            a(href="").pull-right Read more&nbsp;
+                                i.icon-angle-right
+
+    // TESTIMONIAL
+    .region.testimonial.container.reset-vertical-gap.widen-vertical-gap
+        .copy-center
+            i.icon-bullhorn.icon-muted.icon-title
+            blockquote.copy-quote
+                p.sub-copy.shrunk
+                    | "Climb leg rub face on everything give attitude nap all day for under the bed. Chase mice attack feet but media information without cross-media value quickly maximize timely deliverables."
+                    cite.name − <strong>John William Doe</strong>, Aestik
+            .testimonial-slider-nav
+                a(href="") 
+                    i.icon-circle-blank
+                a(href="") 
+                    i.icon-circle-blank
+                a(href="") 
+                    i.icon-circle-blank
+
+    // FOOT CTA
+    .region.base-invert.reset-vertical-gap(style='background-image: url(assets/images/cta-foot-blur.jpg); background-attachment: fixed;')
+        div(style='background-color: rgba(0,0,0, 0.50); height: 100%;')
+            section.container.widen-vertical-gap.marketing
+                h3.stretched So, What Are You Waiting For? 
+                p 
+                    a.btn.btn-primary.btn-lg.btn-cta Buy This Theme Now! 
+
+    // CLIENT LIST
+    .region.base-greyscale.reset-vertical-gap.widen-vertical-gap.client-list
+        section.container
+            header.copy-center
+                h4.stretched Our Clients
+            .copy-center
+                a(href="http://") 
+                    img(src="assets/images/HTML5_3D.png", alt="")
+                a(href="http://") 
+                    img(src="assets/images/HTML5_Connectivity.png", alt="")
+                a(href="http://") 
+                    img(src="assets/images/HTML5_Device.png", alt="")
+                a(href="http://") 
+                    img(src="assets/images/HTML5_Multimedia.png", alt="")
+                a(href="http://") 
+                    img(src="assets/images/HTML5_Offline.png", alt="")
+                a(href="http://") 
+                    img(src="assets/images/HTML5_Performance.png", alt="")
+                a(href="http://") 
+                    img(src="assets/images/HTML5_Semantics.png", alt="")
+                a(href="http://") 
+                    img(src="assets/images/HTML5_Styling.png", alt="")
+
+    // Footer Widgets
+    aside.region.footer-widgets.base-invert
+        .container
+            .row
+                .col-md-4.col-lg-4.col-sm-12.col-xs-12
+                    mixin widget-about
+                .col-md-2.col-lg-2.col-sm-6.col-xs-6
+                    mixin widget-categories
+                .col-md-2.col-lg-2.col-sm-6.col-xs-6
+                    mixin widget-link
+                .col-md-4.col-lg-4.col-sm-12.col-xs-12
+                    mixin widget-newsletter 
+                    mixin widget-woo-featured-products

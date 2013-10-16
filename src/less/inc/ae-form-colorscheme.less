@@ -1,0 +1,61 @@
+// -----------------------------------------------------------------
+// * [Form Styles]
+// * 
+// * @project Suave Wordpress Theme
+// * @version 1.0.0
+// * 
+// * @author Dwi A. Hambali <dwi.asharialdy@gmail.com>
+// * @author Pratama H. Salahudin <pratama@hasriyan.com>
+// -----------------------------------------------------------------
+
+.base-secondary{
+    .form-control {
+        border-color: lighten(@secondary-btn-default, 15%);
+
+        color: @secondary-text;
+
+        .placeholder(@color: lighten(@secondary-background, 35%));
+        &:focus {
+            border-color: @btn-info;
+        }
+    }
+}
+
+.base-tertiary{
+    .form-control {
+        border-color: darken(@tertiary-accent, 20%);
+
+        color: @tertiary-text;
+
+        .placeholder(@color: lighten(@tertiary-background, 35%));
+        &:focus {
+            border-color: @btn-info;
+        }
+    }
+}
+
+.base-quaternary{
+    .form-control {
+        border-color: lighten(@quaternary-accent, 20%);
+
+        color: @quaternary-text;
+
+        .placeholder(@color: darken(@quaternary-accent, 10%));
+        &:focus {
+            border-color: @btn-info;
+        }
+    }
+}
+
+.base-invert{
+    .form-control {
+        border-color: @invert-btn-default;
+
+        color: @invert-text;
+
+        .placeholder(@color: lighten(@invert-background, 25%));
+        &:focus {
+            border-color: @btn-info;
+        }
+    }
+}

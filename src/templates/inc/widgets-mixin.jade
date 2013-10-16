@@ -1,0 +1,946 @@
+//- 
+    =====================================================================
+    * Default Widgets Mixins
+    * 
+    * @author Pratama H. Salahudin <pratama@hasriyan.com>
+    =====================================================================
+
+//- WIDGET ARCHIVE
+mixin widget-archive
+    section.panel.panel-default.widget.widget_archive
+        header.panel-heading
+            i.icon-folder-open-alt.icon-widget-heading
+            h2.widget-heading Archive
+        .panel-body
+            ul
+                li
+                    a(href='#') January 2013 
+                    span.count 5
+                li
+                    a(href='#') February 2012
+                    span.count 5
+                li
+                    a(href='#') March 2013 
+                    span.count 5
+                li
+                    a(href='#') April 2013 
+                    span.count 5
+                li
+                    a(href='#') May 2013 
+                    span.count 5
+
+//- WIDGET ARCHIVE DROPDOWN
+mixin widget-archive-dropdown
+    section.panel.panel-default.widget
+        header.panel-heading
+            i.icon-folder-close-alt.icon-widget-heading
+            h2.widget-heading Archive Dropdown
+        .panel-body
+            select(name="archive-dropdown")
+                option(value="") Select Month
+                option(value="") January 2013 (5)
+                option(value="") February 2013 (5)
+                option(value="") March 2013 (5)
+                option(value="") April 2013 (5)
+                option(value="") May 2013 (5)
+
+//- WIDGET CATEGORIES
+mixin widget-categories
+    section.panel.panel-default.widget.widget_categories
+        header.panel-heading
+            i.icon-list.icon-widget-heading
+            h2.widget-heading Categories
+        .panel-body
+            ul
+                li
+                    a(href='#') 
+                        i.icon-desktop
+                        | Web Design
+                    span.count 5
+                li
+                    a(href='#') 
+                        i.icon-circle-blank
+                        | Technology
+                li
+                    a(href='#') 
+                        i.icon-circle-blank
+                        | Science &amp; Fiction
+                li
+                    a(href='#') 
+                        i.icon-paste
+                        | Development
+                li 
+                    a(href='#') 
+                        i.icon-double-angle-up
+                        | Web Development
+                li 
+                    a(href='#') 
+                        i.icon-screenshot
+                        | App Development
+                li
+                    a(href='#') 
+                        i.icon-file-text-alt
+                        | Augmented Reality
+                li
+                    a(href='#') 
+                        i.icon-circle-blank
+                        | Interface Design
+                li
+                    a(href='#') 
+                        i.icon-circle-blank
+                        | Artificial Intelligent
+
+//- WIDGET CATEGORIES DROPDOWN
+mixin widget-categories-dropdown
+    section.panel.panel-default.widget
+        header.panel-heading
+            i.icon-folder-close-alt.icon-widget-heading
+            h2.widget-heading Categories Dropdown
+        .panel-body
+            select(name="archive-dropdown")
+                option(value="") Select Categories
+                option(value="") Augmented Reality
+                option(value="") Interface Design
+                option(value="") Artificial Intelligent
+                option(value="") Development
+                option(value="") Science &amp; Fiction
+
+//- WIDGET NAV
+mixin widget-link
+    section.panel.panel-default.widget.widget_nav_menu
+        header.panel-heading
+            i.icon-link.icon-widget-heading
+            h2.widget-heading Link
+        .panel-body
+            ul
+                li
+                    a(href='#') 
+                        | Web Design
+                li
+                    a(href='#') 
+                        | Technology
+                li
+                    a(href='#') 
+                        | Science &amp; Fiction
+                li
+                    a(href='#') 
+                        | Development
+                li 
+                    a(href='#') 
+                        | Web Development
+                li 
+                    a(href='#') 
+                        | App Development
+
+//- WIDGET NAV WITH ICONS
+mixin widget-link-icons
+    section.panel.panel-default.widget.widget_nav_menu
+        header.panel-heading
+            i.icon-external-link.icon-widget-heading
+            h2.widget-heading Link
+        .panel-body
+            ul
+                li
+                    a(href='#') 
+                        i.icon-circle-blank
+                        | Web Design
+                li
+                    a(href='#') 
+                        i.icon-circle-blank
+                        | Development
+                    ul.children 
+                        li 
+                            a(href='#') 
+                                i.icon-circle-blank
+                                | Web Development
+                        li 
+                            a(href='#') 
+                                i.icon-circle-blank
+                                | App Development
+                li
+                    a(href='#') 
+                        i.icon-circle-blank
+                        | Technology
+                li
+                    a(href='#') 
+                        i.icon-circle-blank
+                        | Science &amp; Fiction
+
+//- WIDGET PAGES
+mixin widget-pages
+    section.panel.panel-default.widget.widget_pages
+        header.panel-heading
+            i.icon-file-alt.icon-widget-heading
+            h2.widget-heading Pages
+        .panel-body
+            ul
+                li
+                    a(href='#') 
+                        | Blog
+                li
+                    a(href='#') 
+                        | Cart
+                li
+                    a(href='#') 
+                        | Checkout
+                li
+                    a(href='#') 
+                        | Front Page
+                li 
+                    a(href='#') 
+                        | My Account
+
+//- WIDGET SEARCH
+mixin widget-search
+    section.panel.panel-default.widget
+        header.panel-heading
+            i.icon-search.icon-widget-heading
+            h2.widget-heading Search
+        .panel-body
+            form.form-inline(id="", method="", action="", role="form")
+                .form-group
+                    label.sr-only(for="search-query") Search
+                    input.form-control.input-sm(type="text", id="search-query", placeholder="search")
+                button.btn.btn-primary.btn-sm.btn-search(type="submit") Search
+
+//- WIDGET TAGS
+mixin widget-tags
+    section.panel.panel-default.widget
+        header.panel-heading
+            i.icon-tag.icon-widget-heading
+            h2.widget-heading Tags
+        .panel-body
+            a(href="", target="_blank").btn.btn-xs.btn-primary html
+            a(href="", target="_blank").btn.btn-xs.btn-primary css
+            a(href="", target="_blank").btn.btn-xs.btn-primary javascript
+            a(href="", target="_blank").btn.btn-xs.btn-primary WordPress
+            a(href="", target="_blank").btn.btn-xs.btn-primary PHP
+            a(href="", target="_blank").btn.btn-xs.btn-primary nodejs
+            a(href="", target="_blank").btn.btn-xs.btn-primary JAVA
+            a(href="", target="_blank").btn.btn-xs.btn-primary pearl
+            a(href="", target="_blank").btn.btn-xs.btn-primary Python
+            a(href="", target="_blank").btn.btn-xs.btn-primary web design
+            a(href="", target="_blank").btn.btn-xs.btn-primary web development
+            a(href="", target="_blank").btn.btn-xs.btn-primary ui/ux design
+            a(href="", target="_blank").btn.btn-xs.btn-primary mobile app development
+
+//- WIDGET POPULAR POSTS
+mixin widget-popular-post
+    section.panel.panel-default.widget
+        header.panel-heading
+            i.icon-pencil.icon-widget-heading
+            h2.widget-heading Popular Post
+        .panel-body
+            ul  
+                li
+                    article.widget-post
+                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        .widget-post-content
+                            a(href="http://", target="_blank") Veggies sunt bona vobis, proinde vos postulo
+                            span.post-date January 1st, 2013
+                li
+                    article.widget-post
+                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        .widget-post-content
+                            a(href="http://", target="_blank") Turnip greens napa cabbage
+                            span.post-date January 1st, 2013
+                li
+                    article.widget-post
+                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        .widget-post-content
+                            a(href="http://", target="_blank") Tomato summer purslane beetroot
+                            span.post-date January 1st, 2013
+                li
+                    article.widget-post
+                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        .widget-post-content
+                            a(href="http://", target="_blank") Prairie turnip dulse winter purslane napa
+                            span.post-date January 1st, 2013
+                li
+                    article.widget-post
+                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        .widget-post-content
+                            a(href="http://", target="_blank") Soybean broccoli maize lotus root
+                            span.post-date January 1st, 2013
+
+//- WIDGET RECENT POSTS
+mixin widget-recent-post
+    section.panel.panel-default.widget
+        header.panel-heading
+            i.icon-pencil.icon-widget-heading
+            h2.widget-heading Recent Posts
+        .panel-body
+            ul
+                li
+                    a(href="http://", target="_blank") Veggies sunt bona vobis, proinde vos postulo
+                    span.post-date January 1st, 2013
+
+                li
+                    a(href="http://", target="_blank") Veggies sunt bona vobis, proinde vos postulo
+                    span.post-date February 1st, 2013
+                li
+                    a(href="http://", target="_blank") Turnip greens napa cabbage
+                    span.post-date March 1st, 2013
+                li
+                    a(href="http://", target="_blank") Tomato summer purslane beetroot
+                    span.post-date April 1st, 2013
+                li
+                    a(href="http://", target="_blank") Prairie turnip dulse winter purslane napa
+                    span.post-date May 1st, 2013
+                li
+                    a(href="http://", target="_blank") Soybean broccoli maize lotus root
+                    span.post-date June 1st, 2013
+
+//- WIDGET ABOUT
+mixin widget-about
+    section.panel.panel-default.widget
+        header.panel-heading
+            i.icon-info.icon-widget-heading
+            h2.widget-heading About Us
+        .panel-body
+            p
+                | Suave is a Minimalist Business Theme for Bootstrap.
+                | Built with simplicity and flexibility in mind.
+                | Perfect for various business needs.
+            address
+                strong Twitter, Inc.
+                br
+                | 795 Folsom Ave, Suite 600
+                br
+                | San Francisco, CA 94107
+                br
+                abbr(title='Phone') Ph:
+                a(href='tel:123-4567890') 123-4567890
+            address
+                strong Full Name
+                br
+                a(href='mailto:#') first.last@example.com
+ 
+//- WIDGET NEWSLETTER       
+mixin widget-newsletter
+    section.panel.panel-default.widget
+        header.panel-heading
+            i.icon-envelope-alt.icon-widget-heading
+            h2.widget-heading Join Our Newsletter
+        .panel-body
+            p
+                | Get our monthly newsletter, Latest news &amp; buzz.
+            p
+                form.form-inline(id="", method="", action="", role="form")
+                    .form-group
+                        label.sr-only(for="subscribe-form") Email Address
+                        input.form-control.input-sm(type="email", placeholder="Type your email here", id="subscribe-form")
+                    button.btn.btn-primary.btn-sm(type="submit") Submit
+
+//- WIDGET META
+mixin widget-meta
+    section.panel.panel-default.widget.widget_meta
+        header.panel-heading
+            i.icon-circle-blank.icon-widget-heading
+            h2.widget-heading Meta
+        .panel-body
+            ul
+                li
+                    a(href='#') 
+                        | Log in
+                li
+                    a(href='#') 
+                        | Entries RSS
+                li
+                    a(href='#') 
+                        | Comments RSS
+                li
+                    a(href='#') 
+                        | WordPress.org
+
+//- WIDGET RECENT COMMENTS
+mixin widget-recent-comments
+    section.panel.panel-default.widget
+        header.panel-heading
+            i.icon-comment-alt.icon-widget-heading
+            h2.widget-heading Recent Comments
+        .panel-body
+            ul
+                li 
+                    | John Doe on 
+                    a(href="http://", target="_blank") Veggies sunt bona vobis, proinde vos postulo
+                li 
+                    | John Doe on 
+                    a(href="http://", target="_blank") Veggies sunt bona vobis, proinde vos postulo
+                li 
+                    | John Doe on 
+                    a(href="http://", target="_blank") Veggies sunt bona vobis, proinde vos postulo
+                li 
+                    | John Doe on 
+                    a(href="http://", target="_blank") Veggies sunt bona vobis, proinde vos postulo
+                li 
+                    | John Doe on 
+                    a(href="http://", target="_blank") Veggies sunt bona vobis, proinde vos postulo
+
+//- WIDGET RSS
+mixin widget-rss
+    section.panel.panel-default.widget
+        header.panel-heading
+            a(href="http://") 
+                i.icon-rss.icon-widget-heading
+            a(href="http://")
+                h2.widget-heading RSS
+        .panel-body
+            ul
+                li
+                    a(href="http://", target="_blank") Home Page and Front Page Templates
+                    span.rss-date January 1st, 2013
+                    .rssSummary
+                        | Chip Bennett, Team Rep and Administrator of the WordPress Theme Review Team, wrote a comprehensive post about the intricacy around home ...
+                    cite John William Doe
+                li
+                    a(href="http://", target="_blank") Chip Bennett, Team Rep
+                    span.rss-date January 1st, 2013
+                    .rssSummary
+                        | Chip Bennett, Team Rep and Administrator of the WordPress Theme Review Team, wrote a comprehensive post about the intricacy around home ...
+                    cite John William Doe
+                li
+                    a(href="http://", target="_blank") Administrator of the WordPress Theme Review Team
+                    span.rss-date January 1st, 2013
+                    .rssSummary
+                        | Chip Bennett, Team Rep and Administrator of the WordPress Theme Review Team, wrote a comprehensive post about the intricacy around home ...
+                    cite John William Doe
+                li
+                    a(href="http://", target="_blank") The intricacy around home
+                    span.rss-date January 1st, 2013
+                    .rssSummary
+                        | Chip Bennett, Team Rep and Administrator of the WordPress Theme Review Team, wrote a comprehensive post about the intricacy around home ...
+                    cite John William Doe
+                li
+                    a(href="http://", target="_blank") WordPress Theme Review
+                    span.rss-date January 1st, 2013
+                    .rssSummary
+                        | Chip Bennett, Team Rep and Administrator of the WordPress Theme Review Team, wrote a comprehensive post about the intricacy around home ...
+                    cite John William Doe
+
+//- WIDGET TEXT
+mixin widget-text
+    section.panel.panel-default.widget.widget_text
+        header.panel-heading
+            i.icon-file-text-alt.icon-widget-heading
+            h2.widget-heading text
+        .panel-body.textwidget
+            p
+                strong Large image: linked in a caption
+                br
+            .wp-caption.alignnone
+                a(href="")
+                    img(src="assets/images/porto3.jpg", alt="")
+                p.wp-caption-text
+                    | This image is 960 by 720 pixels.
+            p 
+                strong Text
+                br
+                | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+                br
+                br
+                strong Select element with long value
+            form(id="", method="", action="")
+                select
+                    option
+                        | Select element with long value value value long value value value
+
+//- 
+    =====================================================================
+    * Woo Widgets Mixins
+    * 
+    * @author Pratama H. Salahudin <pratama@hasriyan.com>
+    =====================================================================
+
+//- WIDGET BEST SELLERS
+mixin widget-woo-best-sellers
+    section.panel.panel-default.widget.woocommerce.widget_best_sellers
+        header.panel-heading
+            i.icon-star-empty.icon-widget-heading
+            h2.widget-heading Woo Best Sellers
+        .panel-body
+            ul.product_list_widget
+                li
+                    a(href="http://") 
+                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        | Woo Logo
+                    del 
+                        span.amount $2000
+                    ins 
+                        span.amount $18
+                li
+                    a(href="http://") 
+                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        | Premium Quality
+                    del 
+                        span.amount $2000
+                    ins 
+                        span.amount $18
+                li
+                    a(href="http://") 
+                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        | Ship Your Idea
+                    del 
+                        span.amount $2000
+                    ins 
+                        span.amount $18
+                li
+                    a(href="http://") 
+                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        | The sticky post
+                    del 
+                        span.amount $2000
+                    ins 
+                        span.amount $18
+                li
+                    a(href="http://") 
+                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        | Woo T-Shirt
+                    del 
+                        span.amount $2000
+                    ins 
+                        span.amount $18
+
+//- WIDGET ON SALE
+mixin widget-woo-onsale
+    section.panel.panel-default.widget.woocommerce.widget_onsale
+        header.panel-heading
+            i.icon-money.icon-widget-heading
+            h2.widget-heading Woo On Sale
+        .panel-body
+            ul.product_list_widget
+                li
+                    a(href="http://") 
+                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        | Woo Logo
+                    del 
+                        span.amount $2000
+                    ins 
+                        span.amount $18
+                li
+                    a(href="http://") 
+                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        | Premium Quality
+                    span.from From : 
+                    del 
+                        span.amount $2000
+                    ins 
+                        span.amount $18
+                li
+                    a(href="http://") 
+                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        | Ship Your Idea
+                    del 
+                        span.amount $2000
+                    ins 
+                        span.amount $18
+                li
+                    a(href="http://") 
+                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        | The sticky post
+                    span.amount $18
+                li
+                    a(href="http://") 
+                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        | Woo T-Shirt
+                    del 
+                        span.amount $2000
+                    ins 
+                        span.amount $18
+
+//- WIDGET RANDOM PRODUCTS
+mixin widget-woo-random-products
+    section.panel.panel-default.widget.woocommerce.widget_random_products
+        header.panel-heading
+            i.icon-inbox.icon-widget-heading
+            h2.widget-heading Woo Random Products
+        .panel-body
+            ul.product_list_widget
+                li
+                    a(href="http://") 
+                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        | Woo Logo
+                    del 
+                        span.amount $2000
+                    ins 
+                        span.amount $18
+                li
+                    a(href="http://") 
+                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        | Premium Quality
+                    span.from From : 
+                    del 
+                        span.amount $2000
+                    ins 
+                        span.amount $18
+                li
+                    a(href="http://") 
+                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        | Ship Your Idea
+                    del 
+                        span.amount $2000
+                    ins 
+                        span.amount $18
+                li
+                    a(href="http://") 
+                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        | The sticky post
+                    span.amount $18
+                li
+                    a(href="http://") 
+                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        | Woo T-Shirt
+                    del 
+                        span.amount $2000
+                    ins 
+                        span.amount $18
+
+//- WIDGET RANDOM PRODUCTS
+mixin widget-woo-new-products
+    section.panel.panel-default.widget.woocommerce.widget_recent_products
+        header.panel-heading
+            i.icon-circle-blank.icon-widget-heading
+            h2.widget-heading Woo New Products
+        .panel-body
+            ul.product_list_widget
+                li
+                    a(href="http://") 
+                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        | Woo Logo
+                    del 
+                        span.amount $2000
+                    ins 
+                        span.amount $18
+                li
+                    a(href="http://") 
+                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        | Premium Quality
+                    span.from From : 
+                    del 
+                        span.amount $2000
+                    ins 
+                        span.amount $18
+                li
+                    a(href="http://") 
+                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        | Ship Your Idea
+                    del 
+                        span.amount $2000
+                    ins 
+                        span.amount $18
+                li
+                    a(href="http://") 
+                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        | The sticky post
+                    span.amount $18
+                li
+                    a(href="http://") 
+                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        | Woo T-Shirt
+                    del 
+                        span.amount $2000
+                    ins 
+                        span.amount $18
+
+//- WIDGET PRODUCT CATEGORIES
+mixin widget-woo-product-categories
+    section.panel.panel-default.widget.woocommerce.widget_product_categories
+        header.panel-heading
+            i.icon-circle-blank.icon-widget-heading
+            h2.widget-heading Woo Product Categories
+        .panel-body
+            ul
+                li
+                    a(href='#') 
+                        i.icon-circle-blank
+                        | Albums
+                li
+                    a(href='#') 
+                        i.icon-circle-blank
+                        | Clothing
+                li
+                    a(href='#') 
+                        i.icon-circle-blank
+                        | Hoodies
+                li
+                    a(href='#') 
+                        i.icon-circle-blank
+                        | Music
+                li 
+                    a(href='#') 
+                        i.icon-circle-blank
+                        | Posters
+
+//- WIDGET FEATURED PRODUCTS
+mixin widget-woo-featured-products
+    section.panel.panel-default.widget.woocommerce.widget_featured_products
+        header.panel-heading
+            i.icon-star.icon-widget-heading
+            h2.widget-heading Woo Featured Products
+        .panel-body
+            ul.product_list_widget
+                li
+                    a(href="http://") 
+                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        | Woo Logo
+                    del 
+                        span.amount $2000
+                    ins 
+                        span.amount $18
+                li
+                    a(href="http://") 
+                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        | Premium Quality
+                    span.from From : 
+                    del 
+                        span.amount $2000
+                    ins 
+                        span.amount $18
+
+//- WIDGET SEARCH
+mixin widget-woo-product-search
+    section.panel.panel-default.widget.woocommerce.widget_product_search
+        header.panel-heading
+            i.icon-search.icon-widget-heading
+            h2.widget-heading Woo Search Product
+        .panel-body
+            form.form-inline(id="", method="", action="", role="form")
+                .form-group
+                    label.sr-only(for="search-query") Search
+                    input.form-control.input-sm(type="text", id="search-query", placeholder="search for product")
+                    input(type="hidden", value="product")
+                button.btn.btn-primary.btn-sm.btn-search(type="submit") Search
+
+//- WIDGET TAGS
+mixin widget-woo-tags
+    section.panel.panel-default.widget.woocommerce.widget_product_tag_cloud
+        header.panel-heading
+            i.icon-tag.icon-widget-heading
+            h2.widget-heading Woo Tags
+        .panel-body
+            a(href="", target="_blank").btn.btn-xs.btn-primary shirt
+            a(href="", target="_blank").btn.btn-xs.btn-primary jacket
+            a(href="", target="_blank").btn.btn-xs.btn-primary pants
+            a(href="", target="_blank").btn.btn-xs.btn-primary suit
+            a(href="", target="_blank").btn.btn-xs.btn-primary woman bags
+            a(href="", target="_blank").btn.btn-xs.btn-primary shoes
+            a(href="", target="_blank").btn.btn-xs.btn-primary other products
+
+//- WIDGET FEATURED PRODUCTS
+mixin widget-woo-recently-viewed
+    section.panel.panel-default.widget.woocommerce.widget_recently_viewed_products
+        header.panel-heading
+            i.icon-eye-open.icon-widget-heading
+            h2.widget-heading Woo Recently Viewed
+        .panel-body
+            ul.product_list_widget
+                li
+                    a(href="http://") 
+                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        | Woo Logo
+                    del 
+                        span.amount $2000
+                    ins 
+                        span.amount $18
+                li
+                    a(href="http://") 
+                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        | Premium Quality
+                    span.from From : 
+                    del 
+                        span.amount $2000
+                    ins 
+                        span.amount $18
+
+//- WIDGET RECENT REVIEWS
+mixin widget-woo-recent-reviews
+    section.panel.panel-default.widget.woocommerce.widget_recent_reviews
+        header.panel-heading
+            i.icon-eye-open.icon-widget-heading
+            h2.widget-heading Woo Recent Reviews
+        .panel-body
+            ul.product_list_widget
+                li
+                    a(href="http://") 
+                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        | Woo Logo
+                    .star-rating(title="Rated 5.00 out of 5")
+                        span(style="width:100%")
+                            strong.rating 5
+                            | out of 5
+                    | by John Maria
+                li
+                    a(href="http://") 
+                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        | Ninja Silhouette
+                    .star-rating(title="Rated 3.00 out of 5")
+                        span(style="width:60%")
+                            strong.rating 3
+                            | out of 5
+                    | by John Doe
+                li
+                    a(href="http://") 
+                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        | Patient Ninja
+                    .star-rating(title="Rated 2.00 out of 5")
+                        span(style="width:40%")
+                            strong.rating 2
+                            | out of 5
+                    | by John Smith
+
+//- WIDGET TOP RATED
+mixin widget-woo-top-rated
+    section.panel.panel-default.widget.woocommerce.widget_top_rated_products
+        header.panel-heading
+            i.icon-eye-open.icon-widget-heading
+            h2.widget-heading Woo Top Rated
+        .panel-body
+            ul.product_list_widget
+                li
+                    a(href="http://") 
+                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        | Woo Logo
+                    .star-rating(title="Rated 5.00 out of 5")
+                        span(style="width:100%")
+                            strong.rating 5
+                            | out of 5
+                    | by John Maria
+                li
+                    a(href="http://") 
+                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        | Ninja Silhouette
+                    .star-rating(title="Rated 3.00 out of 5")
+                        span(style="width:60%")
+                            strong.rating 3
+                            | out of 5
+                    | by John Doe
+                li
+                    a(href="http://") 
+                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        | Patient Ninja
+                    .star-rating(title="Rated 2.00 out of 5")
+                        span(style="width:40%")
+                            strong.rating 2
+                            | out of 5
+                    | by John Smith
+
+//- WIDGET SHOPPING CART
+mixin widget-woo-cart
+    section.panel.panel-default.widget.woocommerce.widget_shopping_cart
+        header.panel-heading
+            i.icon-star.icon-widget-heading
+            h2.widget-heading Woo Cart
+        .panel-body.widget_shopping_cart_content
+            ul.product_list_widget.cart_list
+                li
+                    a(href="http://") 
+                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        | Woo Logo
+                    dl.variation
+                        dt Color : 
+                        dd Black
+                    span.quantity
+                        | 1 x 
+                        span.amount $20
+                li
+                    a(href="http://") 
+                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        | Ship Your Idea
+                    dl.variation
+                        dt Color : 
+                        dd Black
+                    span.quantity
+                        | 1 x 
+                        span.amount $24
+                li
+                    a(href="http://") 
+                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        | Woo Album #4
+                    dl.variation
+                        dt Color : 
+                        dd Black
+                    span.quantity
+                        | 1 x 
+                        span.amount $25
+            p.total 
+                strong Subtotal : 
+                span.amount $88
+            p.buttons
+                a.btn.btn-sm.btn-viewcart(href="") View Cart
+                a.btn.btn-primary.btn-sm.btn-checkout(href="") Checkout&nbsp;&rarr;
+
+//- WIDGET LAYERED NAV
+mixin widget-woo-layered-nav
+    section.panel.panel-default.widget.woocommerce.widget_layered_nav
+        header.panel-heading
+            i.icon-circle-blank.icon-widget-heading
+            h2.widget-heading Woo Layered Nav
+        .panel-body
+            ul
+                li.chosen
+                    a(href='#') 
+                        | Black
+                    small.count 5
+                li
+                    a(href='#') 
+                        | Blue
+                    small.count 5
+                li
+                    a(href='#') 
+                        | Green
+                    small.count 5
+
+//- WIDGET CATEGORIES DROPDOWN
+mixin widget-woo-layered-nav-dropdown
+    section.panel.panel-default.widget.widget_layered_nav
+        header.panel-heading
+            i.icon-circle-blank.icon-widget-heading
+            h2.widget-heading Woo Layered Nav Dropdown
+        .panel-body
+            select(id="dropdown_layered_nav_color")
+                option(value="") Any Colors
+                option(value="") Black
+                option(value="") Blue
+                option(value="") Green
+
+//- WIDGET LAYERED NAV
+mixin widget-woo-layered-nav-filters
+    section.panel.panel-default.widget.woocommerce.widget_layered_nav_filters
+        header.panel-heading
+            i.icon-circle-blank.icon-widget-heading
+            h2.widget-heading Woo Layered Nav Filters
+        .panel-body
+            ul
+                li.chosen
+                    a(href='#') 
+                        | Black
+                li.chosen
+                    a(href='#') 
+                        | Blue
+
+//- WIDGET PRICE FILTERS
+mixin widget-woo-price-filter
+    section.panel.panel-default.widget.woocommerce.widget_price_filter
+        header.panel-heading
+            i.icon-circle-blank.icon-widget-heading
+            h2.widget-heading Woo Price Filter
+        .panel-body
+            form(method='get', action='')
+                .price_slider_wrapper
+                    .price_slider.ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all(style='', aria-disabled='false')
+                        .ui-slider-range.ui-widget-header.ui-corner-all(style='left: 0%; width: 100%;')
+                        a.ui-slider-handle.ui-state-default.ui-corner-all(href='#', style='left: 0%;')
+                        a.ui-slider-handle.ui-state-default.ui-corner-all(href='#', style='left: 100%;')
+                    .price_slider_amount
+                        input#min_price(type='text', name='min_price', value='', data-min='0', placeholder='Min price', style='display: none;')
+                        input#max_price(type='text', name='max_price', value='', data-max='35', placeholder='Max price', style='display: none;')
+                        button.button(type='submit') Filter
+                        .price_label(style='')
+                            | Price:
+                            span.from £0
+                            | —
+                            span.to £35
+                        input(type='hidden', name='post_type', value='product')
+                        input(type='hidden', name='filter_color', value='15,14')
+                        input(type='hidden', name='query_type_color', value='or')
+                        .clear

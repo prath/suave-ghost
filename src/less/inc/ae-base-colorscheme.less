@@ -1,0 +1,147 @@
+// -----------------------------------------------------------------
+// * [Base Colorscheme Styles]
+// * 
+// * @project Suave Wordpress Theme
+// * @version 1.0.0
+// * 
+// * @author Dwi A. Hambali <dwi.asharialdy@gmail.com>
+// * @author Pratama H. Salahudin <pratama@hasriyan.com>
+// -----------------------------------------------------------------
+
+/* [Secondary]
+-------------------------------------------------------------------*/
+.base-secondary{
+    background-color: @secondary-background;
+
+    color: @secondary-text;
+    a{
+        color: @secondary-accent;
+        &:hover{
+            color: lighten(@secondary-accent, 15%);
+            text-decoration: none;
+        }
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p.sub-copy {
+        color: lighten(@secondary-background, 35%);
+    }
+    i,
+    .icon-title {
+        color: @default-background;
+    }
+}
+
+/* [Tertiary]
+-------------------------------------------------------------------*/
+.base-tertiary{
+    background-color: @tertiary-background;
+
+    color: @tertiary-text;
+    a{
+        color: @tertiary-accent;
+        &:hover{
+            color: darken(@tertiary-accent, 20%);
+            text-decoration: none;
+        }
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p.sub-copy {
+        color: lighten(@tertiary-background, 35%);
+    }
+    i,
+    .icon-title {
+        color: @default-background;
+    }
+}
+
+/* [quaternary]
+-------------------------------------------------------------------*/
+.base-quaternary{
+    background-color: @quaternary-background;
+
+    color: @quaternary-text;
+    a{
+        color: @quaternary-accent;
+        &:hover{
+            color: mix(@quaternary-accent, @quaternary-background, 75%);
+            text-decoration: none;
+        }
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p.sub-copy {
+        color: @quaternary-accent;
+    }
+    i,
+    .icon-title {
+        color: @default-background;
+    }
+}
+
+/* [Invert]
+-------------------------------------------------------------------*/
+.base-invert{
+    background-color: @invert-background;
+
+    color: @invert-text;
+    a{
+        color: @invert-accent;
+        &:hover{
+            color: mix(@invert-accent, @invert-background, 75%);
+        }
+    }
+    .widget {
+        li {
+            a {
+                color: @invert-text;
+                &:hover {
+                    color: @invert-accent;
+                }
+            }
+        }
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p.sub-copy {
+        color: lighten(@invert-background, 35%);
+    }
+    i,
+    .icon-title {
+        color: @default-background;
+    }
+}
+
+/* [Greyscale]
+-------------------------------------------------------------------*/
+.base-greyscale{
+    background-color: @greyscale-background;
+    
+    color: @greyscale-text;
+    a{
+        color: @greyscale-accent;
+        &:hover{
+            color: mix(@greyscale-accent, @greyscale-background, 75%);
+        }
+    }
+    .icon-title {
+        color: @default-background;
+    }
+}
