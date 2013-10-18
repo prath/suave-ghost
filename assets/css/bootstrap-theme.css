@@ -26,7 +26,7 @@ h1 {
 h2 {
   font-size: 30px;
   letter-spacing: -1px;
-  line-height: 36px;
+  line-height: 30px;
 }
 
 h3 {
@@ -160,6 +160,7 @@ table tfoot > tr > td,
  [3. Forms]
 ------------------------------------------------------------------*/
 
+input,
 .form-control {
   background-color: transparent;
   border-color: #a2a2a2;
@@ -174,38 +175,47 @@ table tfoot > tr > td,
   box-shadow: none;
 }
 
+input:-moz-placeholder,
 .form-control:-moz-placeholder {
   color: #7c7c7c;
 }
 
+input::-moz-placeholder,
 .form-control::-moz-placeholder {
   color: #7c7c7c;
 }
 
+input:-ms-input-placeholder,
 .form-control:-ms-input-placeholder {
   color: #7c7c7c;
 }
 
+input::-webkit-input-placeholder,
 .form-control::-webkit-input-placeholder {
   color: #7c7c7c;
 }
 
+input:-moz-placeholder,
 .form-control:-moz-placeholder {
   color: #7c7c7c;
 }
 
+input::-moz-placeholder,
 .form-control::-moz-placeholder {
   color: #7c7c7c;
 }
 
+input:-ms-input-placeholder,
 .form-control:-ms-input-placeholder {
   color: #7c7c7c;
 }
 
+input::-webkit-input-placeholder,
 .form-control::-webkit-input-placeholder {
   color: #7c7c7c;
 }
 
+input:focus,
 .form-control:focus {
   border-color: #3d9fe4;
   -webkit-box-shadow: none;
@@ -241,7 +251,7 @@ table tfoot > tr > td,
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 1px;
-  line-height: 36px;
+  line-height: 30px;
   -webkit-transition: all .8s ease;
   -o-transition: all .8s ease;
   transition: all .8s ease;
@@ -570,7 +580,7 @@ table tfoot > tr > td,
 }
 
 .dropup .dropdown-menu {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 /*------------------------------------------------------------------
@@ -687,6 +697,7 @@ table tfoot > tr > td,
   zoom: 1;
   /* Fix for IE7 */
   vertical-align: top;
+  font-size: 12px;
   line-height: 40px;
 }
 
@@ -704,7 +715,7 @@ table tfoot > tr > td,
 
 .navbar-nav > li > a {
   padding: 0;
-  font-size: 12px;
+  font-size: 11px;
   font-family: "Maven Pro";
   font-weight: 700;
   text-transform: uppercase;
@@ -731,16 +742,21 @@ table tfoot > tr > td,
 }
 
 .navbar .nav > li.open > .dropdown-menu {
-  margin-top: 10px;
+  margin-top: 15px;
   opacity: 1;
   -webkit-transition: margin 0.3s ease;
   -o-transition: margin 0.3s ease;
   transition: margin 0.3s ease;
 }
 
-.menu-nav i {
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
+.drop.nav i {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  /* Fix for IE7 */
+  vertical-align: top;
+  margin-top: 12px;
+  font-size: 16px;
 }
 
 .droppable.nav {

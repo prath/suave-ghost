@@ -30,8 +30,8 @@ module.exports = function(grunt) {
          * @type {Object}
          */
         clean: {
-            all: ['assets', 'style.css', '*.ico', '*.png'],
-            css: ['assets/css', 'style.css'],
+            all: ['assets', '*.ico', '*.png'],
+            css: ['assets/css'],
             js: ['assets/js'],
             img: ['assets/images', '*.ico', '*.png'],
             template: ['./*.hbs']
@@ -74,13 +74,7 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd: 'src/less/',
-                    src: ['style.less'],
-                    dest: './',
-                    ext: '.css',
-                }, {
-                    expand: true,
-                    cwd: 'src/less/',
-                    src: ['*.less', '!style.less'],
+                    src: ['*.less'],
                     dest: 'assets/css',
                     ext: '.css',
                 }]

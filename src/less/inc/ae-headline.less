@@ -12,63 +12,82 @@
 -------------------------------------------------------------------*/
 
 .headline{
-    background-position: center center;
-    background-size: cover;
     overflow: hidden;
 
     margin-top: -74px;
 }
-.hero-unit{
-    background-color: @default-accent;
 
-    padding: 50px 0;
-    margin-bottom: 30px;
-
-    font-weight: normal;
-
-    h1{
-        width: 80%;
-
-        margin: 0px auto 30px;
-
-        color: @default-background;
-        font-family: @font-2;
-        font-size: @heading-hero-fz/1.7;
-        font-weight: 100;
-        line-height: 60px;
-
-        //*-----[Responsive 600++]-----*/
-        @media screen and (min-width: 600px) {
-        }
-
-        //*-----[Responsive 768++]-----*/
-        @media screen and (min-width: 768px) {
-            font-size: @heading-hero-fz;
-        }
+.image {
+    &.covered {
+        background-attachment: fixed; 
+        background-position: center center;
+        background-size: cover;
     }
+}
+.hero{
+    &.unit {
+        background-color: @default-accent;
 
-    p{
-        margin-bottom: 40px;
-        margin-top: 20px;
+        padding: 50px 0;
+        margin-bottom: 30px;
 
-        color: lighten(@default-accent, 30%);
-        font-family: @font-2;
-        font-weight: 300;
-        font-size: @body-fz-lg;
-        line-height: @line-height-med;
+        font-weight: normal;
 
-        //*-----[Responsive 600++]-----*/
-        @media screen and (min-width: 600px) {
-            margin-bottom: 20px;
-            margin-top: 10px;
-
-            line-height: @line-height-med;
+        .post.date {
+            color: lighten(@default-accent, 30%);
         }
 
-        //*-----[Responsive 768++]-----*/
-        @media screen and (min-width: 768px) {
-            width: 60%;
-            margin: 0px auto;
+        h1{
+            width: 80%;
+
+            margin: 0px auto 30px;
+
+            color: @default-background;
+            font-family: @font-2;
+            font-size: @heading-hero-fz/1.7;
+            font-weight: 100;
+            line-height: 60px;
+
+            //*-----[Responsive 600++]-----*/
+            @media screen and (min-width: 600px) {
+            }
+
+            //*-----[Responsive 768++]-----*/
+            @media screen and (min-width: 768px) {
+                font-size: @heading-hero-fz;
+            }
+
+            a {
+                color: @default-background;
+                &:hover {
+                    color: lighten(@default-accent, 30%);
+                }
+            }
+        }
+
+        p{
+            margin-bottom: 40px;
+            margin-top: 20px;
+
+            color: lighten(@default-accent, 30%);
+            font-family: @font-2;
+            font-weight: 300;
+            font-size: @body-fz-lg;
+            line-height: @line-height-med;
+
+            //*-----[Responsive 600++]-----*/
+            @media screen and (min-width: 600px) {
+                margin-bottom: 20px;
+                margin-top: 10px;
+
+                line-height: @line-height-med;
+            }
+
+            //*-----[Responsive 768++]-----*/
+            @media screen and (min-width: 768px) {
+                width: 60%;
+                margin: 0px auto;
+            }
         }
     }
 }

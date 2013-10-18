@@ -116,6 +116,8 @@
 
 .brand-tagline {
     .inlineDisplay();
+
+    font-size: @body-fz-sm;
     line-height: 40px;
 }
 
@@ -132,7 +134,7 @@
         > a{
             padding: 0;
 
-            font-size: @body-fz-sm;
+            font-size: @body-fz-xs;
             font-family: @font-3;
             font-weight: 700;
             text-transform: uppercase;
@@ -165,17 +167,19 @@
         margin-top: -20px;
     }
     &.open > .dropdown-menu{
-        margin-top: 10px;
+        margin-top: 15px;
         opacity: 1;
         .transition(~'margin 0.3s ease')
     }
 
 }
 
-.menu-nav {
+.drop.nav {
     i {
-        font-size: 14px;
-        -webkit-font-smoothing: antialiased;
+        .inlineDisplay();        
+        margin-top: 12px;
+
+        font-size: 16px;
     }
 }
 

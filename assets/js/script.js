@@ -1,12 +1,18 @@
+/**
+ * Resizes Cover Image and above content
+ */
 function resizeHeadline(){
     var winH = jQuery(window).height();
-    var vc = jQuery('.headline .vertically-centered');
+    var vc = jQuery('.headline .vertically.centered');
     var mainNav = jQuery('.main-navigation');
     jQuery('.headline').height(winH);
     vc.css('margin-top',(( winH - mainNav.height() - vc.height() )/2) - 70);
     refreshMenuPos();
 }
 
+/**
+ * Repositions Menu/Navbar when window scrolled
+ */
 function refreshMenuPos(){
     var winH = jQuery(window).height();
     var mainNav = jQuery('.main-navigation');
@@ -26,7 +32,9 @@ function refreshMenuPos(){
     }
 }
 
-
+/**
+ * Changes Dropup to Dropdown and vice versa when scrolled
+ */
 function switchDropdownPosition(){
     if(jQuery('.headline').length == 1){
         var headlineHeight  = jQuery('.headline').height();
@@ -39,7 +47,27 @@ function switchDropdownPosition(){
     }
 }
 
+/**
+ * Shows post-list on dropnav 
+ */
+function expandNav() {
+    jQuery('.droppable').slideDown("fast", "easeOutBack");
+    jQuery('.droppable').removeClass("hiden");
+    jQuery('.droppable').addClass("shown");
+    $.cookie('dropnav', true);
+}
+
+function collapseNav() {
+    jQuery('.droppable').slideUp("fast", "easeInBack");
+    jQuery('.droppable').removeClass("shown");
+    jQuery('.droppable').addClass("hiden");
+    $.removeCookie('dropnav');
+}
+
 jQuery(document).ready(function(){
+    if(jQuery('#collapse-the-nav').length > 0) {
+        jQuery('#collapse-the-nav').hide();
+    }
     resizeHeadline();
     refreshMenuPos();
     switchDropdownPosition();
@@ -48,30 +76,38 @@ jQuery(document).ready(function(){
     jQuery(window).on('scroll', refreshMenuPos);
     jQuery(window).on('scroll', switchDropdownPosition);
 
-    $('#drop-the-nav').on('click', function(e){
-        e.preventDefault();
-        if($('.droppable').hasClass("hiden")) {
-            $('.droppable').slideDown("fast", "easeOutBack");
-            $('.droppable').removeClass("hiden");
-            $('.droppable').addClass("shown");
+    // expand-collapse dropnav and qookie to keep the pagination.
+    if(jQuery('#drop-the-nav').length > 0) {
+        jQuery('#drop-the-nav').on('click', function(e){
+            jQuery('#drop-the-nav').hide();
+            jQuery('#collapse-the-nav').show();
+            expandNav();
+        })
+        jQuery('#collapse-the-nav').on('click', function(e){
+            jQuery('#collapse-the-nav').hide();
+            jQuery('#drop-the-nav').show();
+            collapseNav();
+        })
+        jQuery('.pagination a').on('click', function(e){
+            $.cookie('dropnav', true);
+        })
+        jQuery('.navbar-brand').on('click', function(e){
+            $.removeCookie('dropnav');
+        })
+        if($.cookie('dropnav') === 'true'){
+            jQuery('#drop-the-nav').hide();
+            jQuery('#collapse-the-nav').show();
+            jQuery('.droppable').slideDown("fast", "easeOutBack");
+            jQuery('.droppable').removeClass("hiden");
+            jQuery('.droppable').addClass("shown");
         } else {
-            $('.droppable').slideUp("fast", "easeInBack");
-            $('.droppable').removeClass("shown");
-            $('.droppable').addClass("hiden");
+            jQuery('#collapse-the-nav').hide();
+            jQuery('#drop-the-nav').show();
+            jQuery('.droppable').slideUp("fast", "easeInBack");
+            jQuery('.droppable').removeClass("shown");
+            jQuery('.droppable').addClass("hiden");
         }
-        
-    })
-
-    /**
-     * focusing on content
-     */
-    
-    // $("#main-content").hover(function(){
-    //     $(this).siblings(".sidebar-widget").fadeTo("slow", 0.3 );
-    // }, function() {
-    //     $(this).siblings(".sidebar-widget").fadeTo("slow", 1 );
-    // })
-
+    }
 });
 
 
