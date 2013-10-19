@@ -11,7 +11,7 @@
         {{!-- Post Header --}}
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-md-offset-2">
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-md-offset-2 col-lg-offset-2">
 
                     {{!-- Post icon --}}
                     <i class="post icon aecon-bookmark"></i>
@@ -44,7 +44,7 @@
                 <div class="row">
 
                     {{!-- About The Author --}}
-                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                         
                         <aside class="in-post meta">
 
@@ -68,15 +68,10 @@
                                     {{!-- Author Bio --}}
                                     <p>{{author.bio}}</p>
 
-                                    {{!-- Author Social Connect --}}
-                                    <div class="author social">
-                                        <a href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"><i class="icon-twitter-bird"></i>
-                                        </a>
-                                        <a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><i class="icon-facebook"></i>
-                                        </a>
-                                        <a href="https://plus.google.com/share?url={{url absolute="true"}}" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;"><i class="icon-googleplus-rect"></i>
-                                        </a>
-                                    </div>
+                                    {{!-- Author Website --}}
+                                    {{#if author.website}}
+                                    <p><a href="{{author.website}}">{{author.website}}</a></p>
+                                    {{/if}}
 
                                 </div>
 
@@ -105,11 +100,11 @@
 
                                 {{!-- Share Meta --}}
                                 <div class="meta social">
-                                    <a href=""><i class="icon-twitter-bird"></i>
+                                    <a href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"><i class="icon-twitter-bird"></i>
                                     </a>
-                                    <a href=""><i class="icon-facebook"></i>
+                                    <a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><i class="icon-facebook"></i>
                                     </a>
-                                    <a href=""><i class="icon-googleplus-rect"></i>
+                                    <a href="https://plus.google.com/share?url={{url absolute="true"}}" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;"><i class="icon-googleplus-rect"></i>
                                     </a>
                                 </div>
 

@@ -15,7 +15,6 @@ Version: 1.0.0
  3. Footer
  4. Headline
  5. Post
- 6. Helper
 ------------------------------------------------------------------*/
 
 /*------------------------------------------------------------------
@@ -56,44 +55,21 @@ a:hover {
   text-align: center;
 }
 
-header {
-  position: relative;
-  z-index: 100;
-}
-
 #wrapper {
   position: relative;
   z-index: 99;
 }
 
-.dot.separator {
-  display: inline-block;
-  *display: inline;
-  zoom: 1;
-  /* Fix for IE7 */
-  vertical-align: top;
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-.base-invert {
-  background-color: #30363e;
-  color: #c3ccd7;
-}
-
-.base-invert a {
-  color: #eb6f63;
-}
-
-.base-invert a:hover {
-  color: #bc615a;
+header {
+  position: relative;
+  z-index: 100;
 }
 
 /*------------------------------------------------------------------
  [2. Typography]
 ------------------------------------------------------------------*/
 
-/* [Divider]
+/* [Divider Used in drop nav]
 -------------------------------------------------------------------*/
 
 .content.divider {
@@ -129,7 +105,7 @@ header {
   }
 }
 
-/* [Modifiers]
+/* [Typo Modifiers and Helpers]
 -------------------------------------------------------------------*/
 
 .stretched,
@@ -168,6 +144,12 @@ header {
   }
 }
 
+.caption {
+  color: #a0a0a0;
+  font-size: 12px;
+  font-style: italic;
+}
+
 .centered {
   text-align: center;
 }
@@ -176,7 +158,9 @@ header {
 -------------------------------------------------------------------*/
 
 blockquote p {
-  color: #7c7c7c;
+  border-left: 1px solid #eb6f63;
+  padding: 30px;
+  color: #444444;
   font-family: "Roboto Slab";
   font-size: 16px;
   font-weight: 300;
@@ -199,19 +183,28 @@ blockquote p cite {
 ------------------------------------------------------------------*/
 
 footer {
+  background-color: #30363e;
   position: relative;
-  z-index: 9999999;
-  font-size: 11px;
-  text-align: center;
   padding-bottom: 20px;
   padding-top: 20px;
+  color: #c3ccd7;
+  font-size: 11px;
+  text-align: center;
+}
+
+footer a {
+  color: #eb6f63;
+}
+
+footer a:hover {
+  color: #bc615a;
 }
 
 /*------------------------------------------------------------------
  [4. Headline]
 ------------------------------------------------------------------*/
 
-/* [Headline Typo]
+/* [Headline Style]
 -------------------------------------------------------------------*/
 
 .headline {
@@ -222,8 +215,13 @@ footer {
 }
 
 .headline .container.full {
+  left: 0px;
   position: fixed;
+  right: 0px;
 }
+
+/* [Image Cover Style]
+-------------------------------------------------------------------*/
 
 .image.covered {
   position: relative;
@@ -233,6 +231,9 @@ footer {
   width: 100%;
   height: 100%;
 }
+
+/* [The Overall Section of Covered Image Content]
+-------------------------------------------------------------------*/
 
 .hero.unit {
   background-color: #eb6f63;
@@ -541,6 +542,22 @@ footer {
   }
 }
 
+/* [Dot Separator On Post Meta -- date and author name]
+-------------------------------------------------------------------*/
+
+.dot.separator {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  /* Fix for IE7 */
+  vertical-align: top;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* [Author, Share and Tag Meta Styles]
+-------------------------------------------------------------------*/
+
 .in-post.meta {
   position: relative;
   margin-bottom: 30px;
@@ -600,14 +617,8 @@ footer {
   color: #eb6f63;
 }
 
-.featured.image {
-  margin-bottom: 20px;
-}
-
-.featured.image img {
-  -webkit-border-radius: 0px;
-  border-radius: 0px;
-}
+/* [Overriding Ghost Default Pagination Styles]
+-------------------------------------------------------------------*/
 
 .pagination {
   display: block;
@@ -689,7 +700,3 @@ footer {
     right: 200px;
   }
 }
-
-/*------------------------------------------------------------------
- [6. Helper]
-------------------------------------------------------------------*/

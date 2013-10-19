@@ -57,6 +57,9 @@ function expandNav() {
     $.cookie('dropnav', true);
 }
 
+/**
+ * Hide post-list on dropnav 
+ */
 function collapseNav() {
     jQuery('.droppable').slideUp("fast", "easeInBack");
     jQuery('.droppable').removeClass("shown");
@@ -109,6 +112,9 @@ jQuery(document).ready(function(){
             jQuery('.droppable').addClass("hiden");
         }
     }
+
+    // fitvids
+    $(".fitvids").fitVids();
 });
 
 

@@ -1,19 +1,29 @@
 // -----------------------------------------------------------------
 // * [Footer Styles]
 // * 
-// * @project Suave Wordpress Theme
+// * @project Suave Ghost Theme
 // * @version 1.0.0
 // * 
-// * @author Dwi A. Hambali <dwi.asharialdy@gmail.com>
-// * @author Pratama H. Salahudin <pratama@hasriyan.com>
+// * @author Dwi A. Hambali <dwi@aestik.com>
+// * @author Pratama H. Salahudin <pratama@aestik.com>
 // -----------------------------------------------------------------
 
 footer {
-	position:relative;
-	z-index: 9999999;
+	background-color: @invert-background;
 
+	position:relative;
+
+	padding-bottom: 20px;
+    padding-top: 20px;
+
+	color: @invert-text;
     font-size: @body-fz-xs;
     text-align: center;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    
+    a{
+        color: @invert-accent;
+        &:hover{
+            color: mix(@invert-accent, @invert-background, 75%);
+        }
+    }
 } 

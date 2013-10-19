@@ -1,11 +1,11 @@
 // -----------------------------------------------------------------
 // * [Posts Styles]
 // * 
-// * @project Suave Wordpress Theme
+// * @project Suave Ghost Theme
 // * @version 1.0.0
 // * 
-// * @author Dwi A. Hambali <dwi.asharialdy@gmail.com>
-// * @author Pratama H. Salahudin <pratama@hasriyan.com>
+// * @author Dwi A. Hambali <dwi@aestik.com>
+// * @author Pratama H. Salahudin <pratama@aestik.com>
 // -----------------------------------------------------------------
 
 .post {
@@ -204,6 +204,17 @@
     }
 }
 
+/* [Dot Separator On Post Meta -- date and author name]
+-------------------------------------------------------------------*/
+.dot.separator {
+    .inlineDisplay();
+
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* [Author, Share and Tag Meta Styles]
+-------------------------------------------------------------------*/
 .in-post {
     &.meta {
         position: relative;
@@ -263,15 +274,9 @@
     }
 }
 
-.featured {
-    &.image {
-        margin-bottom: 20px;
-        img {
-            border-radius: 0px;
-        }
-    }
-}
 
+/* [Overriding Ghost Default Pagination Styles]
+-------------------------------------------------------------------*/
 .pagination {
     display: block;
 

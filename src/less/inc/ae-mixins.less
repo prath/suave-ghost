@@ -1,11 +1,11 @@
 // -----------------------------------------------------------------
 // * [LESS Mixins]
 // * 
-// * @project Suave Wordpress Theme
+// * @project Suave Ghost Theme
 // * @version 1.0.0
 // * 
-// * @author Dwi A. Hambali <dwi.asharialdy@gmail.com>
-// * @author Pratama H. Salahudin <pratama@hasriyan.com>
+// * @author Dwi A. Hambali <dwi@aestik.com>
+// * @author Pratama H. Salahudin <pratama@aestik.com>
 // -----------------------------------------------------------------
 
 // [Global Mixins]
@@ -205,6 +205,10 @@
 
 //*-----[Quotes. use in testimonials and other quotes]-----*/
 .quotes(@quoteColor, @authorColor, @quoteFont, @authorFont, @quoteSize, @authorSize, @quoteLineHeight, @authorLineHeight, @gap: 30px, @style) {
+    border-left: 1px solid @default-accent;
+
+    padding: 30px;
+
     color: @quoteColor;
     font-family: @quoteFont;
     font-size: @quoteSize;

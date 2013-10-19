@@ -1,14 +1,14 @@
 // -----------------------------------------------------------------
 // * [Headline Styles]
 // * 
-// * @project Suave Wordpress Theme
+// * @project Suave Ghost Theme
 // * @version 1.0.0
 // * 
-// * @author Dwi A. Hambali <dwi.asharialdy@gmail.com>
-// * @author Pratama H. Salahudin <pratama@hasriyan.com>
+// * @author Dwi A. Hambali <dwi@aestik.com>
+// * @author Pratama H. Salahudin <pratama@aestik.com>
 // -----------------------------------------------------------------
 
-/* [Headline Typo]
+/* [Headline Style]
 -------------------------------------------------------------------*/
 
 .headline{
@@ -20,11 +20,15 @@
     z-index: 0;
     .container {
         &.full {
+            left: 0px;
             position: fixed;
+            right: 0px;
         }
     }
 }
 
+/* [Image Cover Style]
+-------------------------------------------------------------------*/
 .image {
     &.covered {
         position: relative;
@@ -35,6 +39,9 @@
         height: 100%;
     }
 }
+
+/* [The Overall Section of Covered Image Content]
+-------------------------------------------------------------------*/
 .hero{
     &.unit {
         background-color: @default-accent;

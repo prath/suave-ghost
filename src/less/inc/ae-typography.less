@@ -1,15 +1,15 @@
 // -----------------------------------------------------------------
 // * [Text & Typography Styles]
 // * 
-// * @project Suave Wordpress Theme
+// * @project Suave Ghost Theme
 // * @version 1.0.0
 // * 
-// * @author Dwi A. Hambali <dwi.asharialdy@gmail.com>
-// * @author Pratama H. Salahudin <pratama@hasriyan.com>
+// * @author Dwi A. Hambali <dwi@aestik.com>
+// * @author Pratama H. Salahudin <pratama@aestik.com>
 // -----------------------------------------------------------------
 
 
-/* [Divider]
+/* [Divider Used in drop nav]
 -------------------------------------------------------------------*/
 .content.divider {
     border-bottom: 1px solid lighten(@default-accent,10%);
@@ -47,7 +47,7 @@
     }
 }
 
-/* [Modifiers]
+/* [Typo Modifiers and Helpers]
 -------------------------------------------------------------------*/
 .stretched,
 .half.stretched {
@@ -84,6 +84,12 @@
     }
 }
 
+.caption {
+    color: @muted-color;
+    font-size: @body-fz-sm;
+    font-style: italic;
+}
+
 .centered {
     text-align: center;
 }
@@ -92,6 +98,6 @@
 -------------------------------------------------------------------*/
 blockquote {
     p {
-        .quotes(@default-text, @default-text, @font-2, @font-1, @body-fz-lg, @body-fz-df, @line-height-med, @line-height-base, 10px, italic);
+        .quotes(@heading-color, @default-text, @font-2, @font-1, @body-fz-lg, @body-fz-df, @line-height-med, @line-height-base, 10px, italic);
     }
 }
