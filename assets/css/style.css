@@ -41,11 +41,11 @@ body.suave {
 }
 
 a {
-  color: #4ecfe0;
+  color: #41c2d3;
 }
 
 a:hover {
-  color: #16737f;
+  color: #175b64;
   text-decoration: none;
 }
 
@@ -161,7 +161,7 @@ p {
 }
 
 blockquote p {
-  border-left: 1px solid #4ecfe0;
+  border-left: 1px solid #41c2d3;
   padding: 30px;
   color: #444444;
   font-family: "Roboto Slab", Georgia;
@@ -185,7 +185,7 @@ blockquote p cite {
 -------------------------------------------------------------------*/
 
 .content.divider {
-  border-bottom: 1px solid #79dbe8;
+  border-bottom: 1px solid #6acfdd;
   position: relative;
   height: 1px;
   margin-bottom: 50px;
@@ -201,11 +201,11 @@ blockquote p cite {
   zoom: 1;
   /* Fix for IE7 */
   vertical-align: top;
-  background-color: #baecf3;
+  background-color: #d2f1f5;
   position: relative;
   top: -43px;
   padding: 5px 10px 5px 20px;
-  color: #4ecfe0;
+  color: #41c2d3;
   text-align: center;
   -webkit-border-radius: 3px;
   border-radius: 3px;
@@ -295,7 +295,7 @@ table thead > tr > th,
 .table thead > tr > th,
 table thead > tr > td,
 .table thead > tr > td {
-  border-bottom: 2px solid #a5e7ef;
+  border-bottom: 2px solid #94dde6;
 }
 
 table tbody > tr > th,
@@ -311,19 +311,19 @@ table tfoot > tr > td,
 
 .table-striped > tbody > tr:nth-child(odd) > td,
 .table-striped > tbody > tr:nth-child(odd) > th {
-  background-color: #d0f2f7;
+  background-color: #bdeaf0;
 }
 
 .table-striped tbody > tr > th,
 .table-striped tfoot > tr > th,
 .table-striped tbody > tr > td,
 .table-striped tfoot > tr > td {
-  border-top: 1px solid #d0f2f7;
+  border-top: 1px solid #bdeaf0;
 }
 
 .table-hover > tbody > tr:hover > td,
 .table-hover > tbody > tr:hover > th {
-  background-color: #ddf6f9;
+  background-color: #caeef3;
 }
 
 /*------------------------------------------------------------------
@@ -456,8 +456,8 @@ input::-webkit-input-placeholder {
 }
 
 .btn.btn-primary {
-  border: 1px solid #25c1d6;
-  color: #25c1d6;
+  border: 1px solid #2aa6b7;
+  color: #2aa6b7;
   font-family: "Noto Sans", "Helvetica Neue", Helvetica, Sans;
   -webkit-border-radius: 3px;
   border-radius: 3px;
@@ -472,13 +472,13 @@ input::-webkit-input-placeholder {
 .btn.btn-primary.focus,
 .btn.btn-primary:active,
 .btn.btn-primary.active {
-  border-color: #64d5e4;
-  color: #64d5e4;
+  border-color: #56c9d8;
+  color: #56c9d8;
 }
 
 .btn.btn-link {
-  border: 1px solid #25c1d6;
-  color: #25c1d6;
+  border: 1px solid #2aa6b7;
+  color: #2aa6b7;
   font-family: "Noto Sans", "Helvetica Neue", Helvetica, Sans;
   -webkit-border-radius: 3px;
   border-radius: 3px;
@@ -494,8 +494,8 @@ input::-webkit-input-placeholder {
 .btn.btn-link.focus,
 .btn.btn-link:active,
 .btn.btn-link.active {
-  border-color: #64d5e4;
-  color: #64d5e4;
+  border-color: #56c9d8;
+  color: #56c9d8;
 }
 
 .btn.btn-link:hover {
@@ -508,7 +508,7 @@ input::-webkit-input-placeholder {
   font-family: "Noto Sans", "Helvetica Neue", Helvetica, Sans;
   -webkit-border-radius: 3px;
   border-radius: 3px;
-  border-left: 1px solid #25c1d6;
+  border-left: 1px solid #2aa6b7;
   padding: 0 10px;
   font-size: 14px;
   font-weight: 500;
@@ -531,8 +531,8 @@ input::-webkit-input-placeholder {
 
 .btn.btn-cta:hover {
   background-color: transparent;
-  border: 1px solid #25c1d6;
-  color: #25c1d6;
+  border: 1px solid #2aa6b7;
+  color: #2aa6b7;
 }
 
 @media screen and (min-width: 768px) {
@@ -590,7 +590,7 @@ input::-webkit-input-placeholder {
 }
 
 .dropdown-menu > li > a {
-  border-left: 5px solid #4ecfe0;
+  border-left: 5px solid #41c2d3;
   width: 160px;
   padding: 10px 20px;
   color: #c3ccd7;
@@ -605,7 +605,7 @@ input::-webkit-input-placeholder {
 }
 
 .navbar-default .navbar-nav .dropdown-menu > li > a:hover {
-  background-color: #4ecfe0;
+  background-color: #41c2d3;
   background-image: none;
   color: #fff;
 }
@@ -653,7 +653,7 @@ input::-webkit-input-placeholder {
 }
 
 .navbar-default .navbar-brand {
-  color: #4ecfe0;
+  color: #41c2d3;
 }
 
 .navbar-default .navbar-brand:hover {
@@ -687,21 +687,21 @@ input::-webkit-input-placeholder {
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #4ecfe0;
+  color: #41c2d3;
 }
 
 .navbar-default .navbar-nav li:hover > a {
-  color: #4ecfe0;
+  color: #41c2d3;
 }
 
 .navbar-default .navbar-nav > .active > a {
   background-color: transparent;
-  color: #4ecfe0;
+  color: #41c2d3;
 }
 
 .navbar-default .navbar-nav > .active > a:hover {
   background-color: transparent;
-  color: #4ecfe0;
+  color: #41c2d3;
 }
 
 .navbar-default .navbar-nav > .dropup.open > .dropdown-toggle {
@@ -714,7 +714,7 @@ input::-webkit-input-placeholder {
 .navbar-default .navbar-nav > .open > a:active,
 .navbar-default .navbar-nav > .open > a.active {
   background-color: transparent;
-  color: #4ecfe0;
+  color: #41c2d3;
 }
 
 .navbar-default .navbar-nav > .open .dropdown-menu > li > a {
@@ -722,7 +722,7 @@ input::-webkit-input-placeholder {
 }
 
 .navbar-default .navbar-nav > .open .dropdown-menu > li > a:hover {
-  background-color: #4ecfe0;
+  background-color: #41c2d3;
   color: #ffffff;
 }
 
@@ -730,14 +730,9 @@ input::-webkit-input-placeholder {
   background-color: rgba(48, 54, 62, 0.5);
 }
 
-.navbar-header {
-  text-align: center;
-}
-
 @media screen and (min-width: 600px) {
   .navbar-header {
     float: left;
-    text-align: left;
   }
 }
 
@@ -903,7 +898,7 @@ input::-webkit-input-placeholder {
 
 .drop.menu {
   position: absolute;
-  top: 55px;
+  top: 5px;
   right: 25px;
   margin-right: -10px;
 }
@@ -922,7 +917,7 @@ input::-webkit-input-placeholder {
 }
 
 .droppable.nav {
-  background-color: rgba(78, 207, 224, 0.95);
+  background-color: rgba(65, 194, 211, 0.95);
   display: none;
   position: fixed;
   z-index: 99;
@@ -936,11 +931,11 @@ input::-webkit-input-placeholder {
 }
 
 .droppable.nav .content-divider {
-  border-color: #a5e7ef;
+  border-color: #94dde6;
 }
 
 .droppable.nav .content-divider .stretched {
-  background-color: #d0f2f7;
+  background-color: #bdeaf0;
 }
 
 .droppable.nav .pagination {
@@ -976,11 +971,11 @@ footer {
 }
 
 footer a {
-  color: #4ecfe0;
+  color: #41c2d3;
 }
 
 footer a:hover {
-  color: #47a9b8;
+  color: #3d9fae;
 }
 
 /*------------------------------------------------------------------
@@ -1019,7 +1014,7 @@ footer a:hover {
 -------------------------------------------------------------------*/
 
 .hero.unit {
-  background-color: #4ecfe0;
+  background-color: #41c2d3;
   padding: 30px 0;
   margin-bottom: 30px;
   font-weight: normal;
@@ -1038,7 +1033,7 @@ footer a:hover {
 }
 
 .hero.unit .post.date {
-  color: #d0f2f7;
+  color: #d2f1f5;
 }
 
 .hero.unit h1 {
@@ -1069,13 +1064,13 @@ footer a:hover {
 }
 
 .hero.unit h1 a:hover {
-  color: #d0f2f7;
+  color: #d2f1f5;
 }
 
 .hero.unit p {
   margin-bottom: 40px;
   margin-top: 20px;
-  color: #d0f2f7;
+  color: #d2f1f5;
   font-family: "Roboto Slab", Georgia;
   font-weight: 300;
   font-size: 16px;
@@ -1154,7 +1149,7 @@ footer a:hover {
   zoom: 1;
   /* Fix for IE7 */
   vertical-align: top;
-  background-color: #4ecfe0;
+  background-color: #41c2d3;
   position: absolute;
   right: 100%;
   top: 30px;
@@ -1223,7 +1218,7 @@ footer a:hover {
 }
 
 .post.item.nav h3 a:hover {
-  color: #d0f2f7;
+  color: #d2f1f5;
 }
 
 @media screen and (min-width: 600px) {
@@ -1246,7 +1241,7 @@ footer a:hover {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  color: #d0f2f7;
+  color: #d2f1f5;
   line-height: 25px;
 }
 
@@ -1257,7 +1252,7 @@ footer a:hover {
 }
 
 .post.item.nav .date {
-  color: #d0f2f7;
+  color: #d2f1f5;
 }
 
 .post .avatar.small {
@@ -1310,7 +1305,7 @@ footer a:hover {
 }
 
 .post.excerpt.container a:hover {
-  color: #4ecfe0;
+  color: #41c2d3;
 }
 
 .post.the.content {
@@ -1373,7 +1368,7 @@ footer a:hover {
 }
 
 .in-post.meta .author.name a:hover {
-  color: #4ecfe0;
+  color: #41c2d3;
 }
 
 .in-post.meta .taxonomy a {
@@ -1397,7 +1392,7 @@ footer a:hover {
 }
 
 .in-post a:hover {
-  color: #4ecfe0;
+  color: #41c2d3;
 }
 
 /* [Overriding Ghost Default Pagination Styles]
@@ -1412,7 +1407,7 @@ footer a:hover {
 }
 
 .pagination > a {
-  border: 1px solid #a5e7ef;
+  border: 1px solid #94dde6;
   position: absolute;
   top: 0px;
   padding-left: 10px;
@@ -1437,7 +1432,7 @@ footer a:hover {
 }
 
 .pagination .page-number {
-  color: #d0f2f7;
+  color: #d2f1f5;
 }
 
 .pagination {
@@ -1446,7 +1441,7 @@ footer a:hover {
 }
 
 .pagination.holder {
-  background-color: #4ecfe0;
+  background-color: #41c2d3;
   padding: 50px 0;
   color: #ffffff;
   text-align: center;
