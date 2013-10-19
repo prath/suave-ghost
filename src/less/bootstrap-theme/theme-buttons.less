@@ -45,26 +45,6 @@
         .button-colorscheme(@btn-primary, @btn-primary);
     }
     
-    //*-----[Button Success]-----*/
-    &.btn-success{
-        .button-colorscheme(@btn-success, @btn-success);
-    }
-    
-    //*-----[Button Info]-----*/
-    &.btn-info{
-        .button-colorscheme(@btn-info, @btn-info);
-    }
-    
-    //*-----[Button Warning]-----*/
-    &.btn-warning{
-        .button-colorscheme(@btn-warning, @btn-warning);
-    }
-    
-    //*-----[Button Danger]-----*/
-    &.btn-danger{
-        .button-colorscheme(@btn-danger, @btn-danger);
-    }
-    
     //*-----[Button Link]-----*/
     &.btn-link{
         .button-colorscheme(@btn-link, @btn-link);
@@ -74,26 +54,16 @@
         }
     }
 
-    //*-----[Button Inverse]-----*/
-    &.btn-inverse{
-        .button-colorscheme(darken(@btn-text, 5%), @btn-inverse);
-    }
-
-    //*-----[Button White]-----*/
-    &.btn-white{
-        .button-colorscheme(@default-background, @default-background);
-    }
-
     //*-----[Button CTA]-----*/
     &.btn-cta {
         .button-colorscheme(@default-background, @default-background);
         border-left: 1px solid @btn-primary;
         
-        padding: 0 30px;
+        padding: 0 10px;
 
-        font-size: @body-fz-lg;
+        font-size: @body-fz-md;
         font-weight: 500;
-        line-height: @line-height-xwide;
+        line-height: @line-height-wide;
         text-transform: uppercase;
         &:hover{
             background-color : transparent;
@@ -101,15 +71,30 @@
 
             color: @btn-primary;
         }
+
+        //*-----[Responsive 768++]-----*/
+        @media screen and (min-width: 768px) {
+            padding: 0 30px;
+
+            font-size: @body-fz-lg;
+            line-height: @line-height-xwide;
+        }
     }
 
     //*-----[Button Large]-----*/
     &.btn-lg{
-        padding: 0 30px;
+        padding: 0 10px;
 
-        font-size: @body-fz-lg;
+        font-size: @body-fz-md;
         font-weight: 500;
-        line-height: @line-height-xwide;
+        line-height: @line-height-wide;
+        //*-----[Responsive 768++]-----*/
+        @media screen and (min-width: 768px) {
+            padding: 0 30px;
+
+            font-size: @body-fz-lg;
+            line-height: @line-height-xwide;
+        }
     }
     
     //*-----[Button Small]-----*/
@@ -132,9 +117,3 @@
 
 }
 
-// [Button Group]
-// ------------------------------------------------------------------
-.btn-group > .btn,
-.btn-group > .popover {
-    font-size: @body-fz-us;
-}

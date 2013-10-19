@@ -1,28 +1,17 @@
 <nav role="navigation" class="navbar navbar-default main-navigation">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" data-toggle="collapse" data-target=".nav-collapse" class="navbar-toggle">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
 
             {{!-- Logo and Title --}}
-            <a href="{{@blog.url}}" class="navbar-brand">
-                {{#if @blog.logo}}<img src="{{@blog.logo}}" alt="">{{/if}}
-                {{@blog.title}}
-            </a>
+            <a href="{{@blog.url}}" class="navbar-brand">{{#if @blog.logo}}<img src="{{@blog.logo}}" alt="">{{/if}}{{@blog.title}}</a>
 
             {{!-- Blog description --}}
             {{#if @blog.description}}
-            <span class="brand-tagline pull-left">
-                {{@blog.description}}
-            </span>
+            <span class="brand-tagline pull-left">{{@blog.description}}</span>
             {{/if}}
 
         </div>
-        <div class="collapse navbar-collapse">
+        <div class="navbar-collapse">
             <ul class="nav navbar-nav pull-right">
                 <li class="dropdown">
                     <a href="single-post-i.html" data-toggle="dropdown" role="button" class="dropdown-toggle">Home Pages<i class="aecon-angle-down"></i>

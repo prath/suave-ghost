@@ -369,27 +369,9 @@ module.exports = function(grunt) {
         'watch'
     ]);
 
-    grunt.registerTask(
-        'genjade',
-        [
-            'jade',
-            'prettify'
-        ]
-    );
-
     /**
      * ======================================================================================================================================
      */
-
-    grunt.registerTask('scriptsalone', ['clean:js', 'copy:js']);
-
-    grunt.registerTask('csssalone', ['less','copy:fontellocss']);
-
-    grunt.registerTask('jadecompilealone', ['clean:all', 
-        'less','copy:fontellocss',
-        'jade',
-        'copy:js'
-    ]);
 
     grunt.registerTask('buildcompress', 'build html with compressed css and js', function(t) {
         if (t) grunt.task.run(['clean:all',

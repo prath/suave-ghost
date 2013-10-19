@@ -6,7 +6,7 @@ function resizeHeadline(){
     var vc = jQuery('.headline .vertically.centered');
     var mainNav = jQuery('.main-navigation');
     jQuery('.headline').height(winH);
-    vc.css('margin-top',(( winH - mainNav.height() - vc.height() )/2) - 70);
+    vc.css('margin-top',(( winH - mainNav.height() - vc.height() )/2) - 50);
     refreshMenuPos();
 }
 
@@ -27,7 +27,7 @@ function refreshMenuPos(){
     }else{
         mainNav.addClass('navbar-absolute-bottom');
         mainNav.removeClass('navbar-fixed-top');
-        mainNav.css('top', winH - mainNav.height());
+        mainNav.css('top', winH - mainNav.outerHeight());
         $('.droppable').css('top', '0px');
     }
 }
@@ -75,6 +75,7 @@ jQuery(document).ready(function(){
     jQuery(window).on('resize', switchDropdownPosition);
     jQuery(window).on('scroll', refreshMenuPos);
     jQuery(window).on('scroll', switchDropdownPosition);
+
 
     // expand-collapse dropnav and qookie to keep the pagination.
     if(jQuery('#drop-the-nav').length > 0) {

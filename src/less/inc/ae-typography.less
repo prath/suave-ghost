@@ -19,8 +19,8 @@
     height: 1px;
 
     margin-bottom: 50px;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: auto;
+    margin-right: auto;
 
     text-align: center;
 
@@ -39,6 +39,11 @@
         text-align: center;
 
         border-radius: @base-radius;
+    }
+
+    //*-----[Responsive 600++]-----*/
+    @media screen and (min-width: 600px) {
+        width: 60%;
     }
 }
 
@@ -68,10 +73,15 @@
 
 .sub-headline {
     color: @heading-color;
-    font-size: @body-fz-xl;
+    font-size: @body-fz-xl+2;
     font-family: @font-2;
     font-weight: 300;
-    line-height: @line-height-wide;
+    line-height: @line-height-wide+4;
+
+    //*-----[Responsive 768++]-----*/
+    @media screen and (min-width: 768px) {
+        font-size: @body-fz-xl+2;
+    }
 }
 
 .centered {

@@ -3,6 +3,7 @@
 {{> header-ii}}
 
 <main id="wrapper">
+
     {{!-- The Post --}}
     {{#post}}
     <article id="main-content-area" class="{{post_class}} container full" role="main">
@@ -43,7 +44,7 @@
                 <div class="row">
 
                     {{!-- About The Author --}}
-                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                         
                         <aside class="in-post meta">
 
@@ -86,7 +87,7 @@
                     </div>
 
                     {{!-- The Content --}}
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 the content">
                         {{content}}
                     </div>
 
@@ -133,13 +134,14 @@
                         </aside>
 
                     </div>
+                    
                 </div>
             </div>
         </div>
 
-
     </article>
     {{/post}}
+
 </main>
 
 <!-- FOOTER-->

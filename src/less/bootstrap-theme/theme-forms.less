@@ -8,12 +8,13 @@
 // * @author Pratama H. Salahudin <pratama@hasriyan.com>
 // -----------------------------------------------------------------
 
-input,
-.form-control {
+input {
     background-color: transparent;
-    border-color: lighten(@default-text, 15%);
+    border: 1px solid lighten(@default-text, 15%);
 
     height: 38px;
+
+    padding: 5px 10px;
 
     color: @default-text;
     font-family: @font-1;
@@ -24,28 +25,4 @@ input,
     box-shadow: none;
 
     .placeholder(@color: @default-text);
-    &:focus {
-        border-color: @btn-info;
-
-        box-shadow: none;
-    }
-}
-
-.form-inline {
-    .form-control {
-        margin-top: -2px;
-    }
-}
-
-.form-group {
-    margin-bottom: 5px;
-}
-
-.input-sm {
-    height: 27px;
-
-    padding: 5px 10px;
-    
-    font-size: @body-fz-sm;
-    line-height: @line-height-narrow;
 }
