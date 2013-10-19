@@ -8,13 +8,11 @@
 // * @author Pratama H. Salahudin <pratama@aestik.com>
 // -----------------------------------------------------------------
 
-// [Typography Variables]
+// [Font Families]
 // ------------------------------------------------------------------
-@font-1                         : "Noto Sans";
-@font-2                         : "Roboto Slab";
-@font-3                         : "Maven Pro";
-@heading-color                  : #444444;
-@muted-color                    : #A0A0A0;
+@font-1                         : "Noto Sans", "Helvetica Neue", Helvetica, Sans;
+@font-2                         : "Roboto Slab", Georgia;
+@font-3                         : "Maven Pro", "Helvetica Neuw", Helvetica, Sans;
 
 //*-----[Body Font-sizes]-----*/
 @body-fz-ul                     : 24px;
@@ -55,23 +53,25 @@
 
 // [Palettes]
 // ------------------------------------------------------------------
+@heading-color                  : #444444;
+@muted-color                    : #A0A0A0;
 
 //*-----[Default]-----*/
 @default-background             : #fff;
 @default-text                   : #7c7c7c;
-@default-accent                 : #eb6f63;
+@default-accent                 : #4ECFE0;
 
 //*-----[Invert]-----*/
 @invert-background              : #30363e;
 @invert-text                    : #c3ccd7;
-@invert-accent                  : #eb6f63;
+@invert-accent                  : @default-accent;
 
 // [Button Colorscheme]
 // ------------------------------------------------------------------
-@btn-text                       : #444444;
-@btn-default                    : #444444;
-@btn-primary                    : #ff7755;
-@btn-link                       : #ff7755;
+@btn-text                       : @heading-color ;
+@btn-default                    : @heading-color ;
+@btn-primary                    : darken(@default-accent, 10%);
+@btn-link                       : darken(@default-accent, 10%);
 
 @invert-btn-default             : #818e9d;
 @invert-btn-primary             : @invert-accent;
