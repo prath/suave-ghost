@@ -1,3 +1,4 @@
+NProgress.start();
 /**
  * Resizes Cover Image and above content
  */
@@ -68,9 +69,13 @@ function collapseNav() {
 }
 
 jQuery(document).ready(function(){
+
+    jQuery('.headline').fadeIn();
+
     if(jQuery('#collapse-the-nav').length > 0) {
         jQuery('#collapse-the-nav').hide();
     }
+    
     resizeHeadline();
     refreshMenuPos();
     switchDropdownPosition();
@@ -115,6 +120,9 @@ jQuery(document).ready(function(){
 
     // fitvids
     $(".fitvids").fitVids();
+
 });
 
-
+jQuery(window).load(function(){
+    NProgress.done();
+})
