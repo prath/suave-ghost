@@ -744,6 +744,7 @@ input::-webkit-input-placeholder {
   font-size: 21px;
   font-weight: 400;
   letter-spacing: -1px;
+  line-height: 50px;
   text-shadow: none;
 }
 
@@ -766,6 +767,7 @@ input::-webkit-input-placeholder {
 @media screen and (min-width: 768px) {
   .navbar-brand {
     font-size: 21px;
+    line-height: 30px;
   }
 }
 
