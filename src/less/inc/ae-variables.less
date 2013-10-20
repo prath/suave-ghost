@@ -8,6 +8,8 @@
 // * @author Pratama H. Salahudin <pratama@aestik.com>
 // -----------------------------------------------------------------
 
+@import "skins/skin-default";
+
 // [Font Families]
 // ------------------------------------------------------------------
 @font-1                         : "Noto Sans", "Helvetica Neue", Helvetica, Sans;
@@ -51,21 +53,6 @@
 @line-height-xwide              : 54px;
 @line-height-uwide              : 100px;
 
-// [Palettes]
-// ------------------------------------------------------------------
-@heading-color                  : #444444;
-@muted-color                    : #A0A0A0;
-
-//*-----[Default]-----*/
-@default-background             : #fff;
-@default-text                   : #7c7c7c;
-@default-accent                 : #41C2D3;
-
-//*-----[Invert]-----*/
-@invert-background              : #30363e;
-@invert-text                    : #c3ccd7;
-@invert-accent                  : @default-accent;
-
 // [Button Colorscheme]
 // ------------------------------------------------------------------
 @btn-text                       : @heading-color ;
@@ -73,7 +60,7 @@
 @btn-primary                    : darken(@default-accent, 10%);
 @btn-link                       : darken(@default-accent, 10%);
 
-@invert-btn-default             : #818e9d;
+@invert-btn-default             : @invert-accent;
 @invert-btn-primary             : @invert-accent;
 @invert-btn-link                : @invert-accent;
 
