@@ -744,6 +744,7 @@ input::-webkit-input-placeholder {
   font-size: 21px;
   font-weight: 400;
   letter-spacing: -1px;
+  line-height: 50px;
   text-shadow: none;
 }
 
@@ -766,6 +767,7 @@ input::-webkit-input-placeholder {
 @media screen and (min-width: 768px) {
   .navbar-brand {
     font-size: 21px;
+    line-height: 30px;
   }
 }
 
@@ -919,15 +921,20 @@ input::-webkit-input-placeholder {
 .droppable.nav {
   background-color: rgba(62, 187, 187, 0.95);
   display: none;
+  bottom: 0px;
+  left: 0px;
   position: fixed;
+  right: 0px;
+  top: 0px;
   z-index: 99;
   height: 100%;
-  width: 100%;
-  padding: 100px 0px 170px;
+  width: auto;
+  padding: 100px 0px 0px;
   color: #ffffff;
   text-align: center;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
 }
 
 .droppable.nav .content-divider {
@@ -942,6 +949,7 @@ input::-webkit-input-placeholder {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 170px;
 }
 
 @media screen and (min-width: 600px) {
@@ -986,6 +994,7 @@ footer a:hover {
 -------------------------------------------------------------------*/
 
 .headline {
+  display: none;
   overflow: hidden;
   margin-top: -74px;
   position: relative;
@@ -1320,6 +1329,10 @@ footer a:hover {
   }
 }
 
+.post .the.content {
+  margin-bottom: 50px;
+}
+
 /* [Dot Separator On Post Meta -- date and author name]
 -------------------------------------------------------------------*/
 
@@ -1342,7 +1355,7 @@ footer a:hover {
 }
 
 .in-post.meta .meta.content {
-  margin-top: 20px;
+  margin-top: 15px;
   font-size: 12px;
   font-style: italic;
   line-height: 20px;

@@ -1329,6 +1329,10 @@ footer a:hover {
   }
 }
 
+.post .the.content {
+  margin-bottom: 50px;
+}
+
 /* [Dot Separator On Post Meta -- date and author name]
 -------------------------------------------------------------------*/
 
@@ -1351,7 +1355,7 @@ footer a:hover {
 }
 
 .in-post.meta .meta.content {
-  margin-top: 20px;
+  margin-top: 15px;
   font-size: 12px;
   font-style: italic;
   line-height: 20px;

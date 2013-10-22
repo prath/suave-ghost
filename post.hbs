@@ -11,7 +11,7 @@
         {{!-- Post Header --}}
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-md-offset-2 col-lg-offset-2">
+                <div class="col-lg-6 col-md-8 col-sm-12 col-xs-12 col-md-offset-2 col-lg-offset-3">
 
                     {{!-- Post icon --}}
                     <i class="post icon aecon-bookmark"></i>
@@ -43,8 +43,14 @@
             <div class="container">
                 <div class="row">
 
+
+                    {{!-- The Content --}}
+                    <div class="col-lg-6 col-md-8 col-sm-12 col-xs-12 col-md-offset-2 col-lg-offset-3 the content">
+                        {{content}}
+                    </div>
+
                     {{!-- About The Author --}}
-                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <div class="col-lg-6 col-md-8 col-sm-12 col-xs-12 col-md-offset-2 col-lg-offset-3">
                         
                         <aside class="in-post meta">
 
@@ -59,35 +65,46 @@
 
                                     {{!-- Author Avatar --}}
                                     {{#if author.image}}
+                                    {{#if author.website}}<a href="{{author.website}}">{{/if}}
                                     <img src="{{author.image}}" alt="avatar" class="author avatar small pull-left">
+                                    {{#if author.website}}</a>{{/if}}
                                     {{/if}}
 
                                     {{!-- Author Name --}}
-                                    <div class="author name">{{author.name}}</div>
+                                    <div class="author name">
+                                    {{#if author.website}}<a href="{{author.website}}">{{/if}}
+                                    {{author.name}} 
+                                    {{#if author.website}}</a>{{/if}}
+                                    </div>
 
                                     {{!-- Author Bio --}}
                                     <p>{{author.bio}}</p>
 
                                     {{!-- Author Website --}}
-                                    {{#if author.website}}
-                                    <p><a href="{{author.website}}">{{author.website}}</a></p>
-                                    {{/if}}
+                                    
 
                                 </div>
 
                             </div>
 
-                        </section>
+                        </aside>
 
-                    </div>
+                        {{!-- Tags --}}
+                        <aside class="in-post meta">
 
-                    {{!-- The Content --}}
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 the content">
-                        {{content}}
-                    </div>
+                            {{!-- Meta Section Title --}}
+                            <h4 class="half stretched">Tags</h4>
 
-                    {{!-- Share & Tags --}}
-                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                            {{!-- Meta Section Content --}}
+                            <div class="meta content">
+
+                                {{!-- Tags Meta --}}
+                                <p class="meta taxonomy">{{#if tags}}{{tags separator=", "}}{{/if}}
+                                </p>
+                            </div>
+
+                        </aside>
+
 
                         {{!-- Share --}}
                         <aside class="in-post meta">
@@ -108,22 +125,6 @@
                                     </a>
                                 </div>
 
-                            </div>
-
-                        </aside>
-
-                        {{!-- Tags --}}
-                        <aside class="in-post meta">
-
-                            {{!-- Meta Section Title --}}
-                            <h4 class="half stretched">Tags</h4>
-
-                            {{!-- Meta Section Content --}}
-                            <div class="meta content">
-
-                                {{!-- Tags Meta --}}
-                                <p class="meta taxonomy">{{#if tags}}{{tags separator=", "}}{{/if}}
-                                </p>
                             </div>
 
                         </aside>
