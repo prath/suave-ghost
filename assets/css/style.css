@@ -247,7 +247,7 @@ blockquote p cite {
   font-size: 20px;
   font-family: "Roboto Slab", Georgia;
   font-weight: 300;
-  line-height: 34px;
+  line-height: 30px;
 }
 
 @media screen and (min-width: 768px) {
