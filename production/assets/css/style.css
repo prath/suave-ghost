@@ -198,6 +198,7 @@ blockquote p cite {
 .content.divider * {
   display: inline-block;
   *display: inline;
+  /* Fix for IE7 */
   zoom: 1;
   /* Fix for IE7 */
   vertical-align: top;
@@ -207,7 +208,6 @@ blockquote p cite {
   padding: 5px 10px 5px 20px;
   color: #3ebbbb;
   text-align: center;
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
 
@@ -247,7 +247,7 @@ blockquote p cite {
   font-size: 20px;
   font-family: "Roboto Slab", Georgia;
   font-weight: 300;
-  line-height: 34px;
+  line-height: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -342,7 +342,6 @@ input {
   font-family: "Noto Sans", "Helvetica Neue", Helvetica, Sans;
   font-size: 13px;
   line-height: 20px;
-  -webkit-border-radius: 3px;
   border-radius: 3px;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -396,19 +395,16 @@ input::-webkit-input-placeholder {
   letter-spacing: 1px;
   line-height: 30px;
   -webkit-transition: all .8s ease;
-  -o-transition: all .8s ease;
   transition: all .8s ease;
   border: 1px solid #444444;
   color: #444444;
   font-family: "Noto Sans", "Helvetica Neue", Helvetica, Sans;
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
 
 .btn:hover {
   background-color: transparent;
   -webkit-transition: all .8s ease;
-  -o-transition: all .8s ease;
   transition: all .8s ease;
 }
 
@@ -438,7 +434,6 @@ input::-webkit-input-placeholder {
   border: 1px solid #444444;
   color: #444444;
   font-family: "Noto Sans", "Helvetica Neue", Helvetica, Sans;
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
 
@@ -459,7 +454,6 @@ input::-webkit-input-placeholder {
   border: 1px solid #319595;
   color: #319595;
   font-family: "Noto Sans", "Helvetica Neue", Helvetica, Sans;
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
 
@@ -480,7 +474,6 @@ input::-webkit-input-placeholder {
   border: 1px solid #319595;
   color: #319595;
   font-family: "Noto Sans", "Helvetica Neue", Helvetica, Sans;
-  -webkit-border-radius: 3px;
   border-radius: 3px;
   border: none;
 }
@@ -506,7 +499,6 @@ input::-webkit-input-placeholder {
   border: 1px solid #ffffff;
   color: #ffffff;
   font-family: "Noto Sans", "Helvetica Neue", Helvetica, Sans;
-  -webkit-border-radius: 3px;
   border-radius: 3px;
   border-left: 1px solid #319595;
   padding: 0 10px;
@@ -585,7 +577,6 @@ input::-webkit-input-placeholder {
   top: 100%;
   padding-bottom: 0px;
   padding-top: 0px;
-  -webkit-border-radius: 0px;
   border-radius: 0px;
 }
 
@@ -623,7 +614,6 @@ input::-webkit-input-placeholder {
 
 .navbar {
   min-height: 30px;
-  -webkit-border-radius: 0px;
   border-radius: 0px;
 }
 
@@ -774,6 +764,7 @@ input::-webkit-input-placeholder {
 .brand-tagline {
   display: inline-block;
   *display: inline;
+  /* Fix for IE7 */
   zoom: 1;
   /* Fix for IE7 */
   vertical-align: top;
@@ -805,7 +796,6 @@ input::-webkit-input-placeholder {
   padding: 4px;
   margin-top: 8px;
   margin-bottom: 8px;
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
 
@@ -859,7 +849,6 @@ input::-webkit-input-placeholder {
   margin-top: 15px;
   opacity: 1;
   -webkit-transition: margin 0.3s ease;
-  -o-transition: margin 0.3s ease;
   transition: margin 0.3s ease;
 }
 
@@ -891,6 +880,7 @@ input::-webkit-input-placeholder {
 .drop.nav i {
   display: inline-block;
   *display: inline;
+  /* Fix for IE7 */
   zoom: 1;
   /* Fix for IE7 */
   vertical-align: top;
@@ -1014,6 +1004,7 @@ footer a:hover {
   position: relative;
   background-position: center center;
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -1125,7 +1116,6 @@ footer a:hover {
 .post img {
   max-width: 100%;
   margin-bottom: 10px;
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
 
@@ -1155,6 +1145,7 @@ footer a:hover {
 .post.icon {
   display: inline-block;
   *display: inline;
+  /* Fix for IE7 */
   zoom: 1;
   /* Fix for IE7 */
   vertical-align: top;
@@ -1165,7 +1156,6 @@ footer a:hover {
   padding: 10px;
   color: #ffffff;
   font-size: 14px;
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
 
@@ -1186,6 +1176,7 @@ footer a:hover {
 .post.meta span {
   display: inline-block;
   *display: inline;
+  /* Fix for IE7 */
   zoom: 1;
   /* Fix for IE7 */
   vertical-align: top;
@@ -1194,6 +1185,7 @@ footer a:hover {
 .post.date {
   display: inline-block;
   *display: inline;
+  /* Fix for IE7 */
   zoom: 1;
   /* Fix for IE7 */
   vertical-align: top;
@@ -1329,16 +1321,13 @@ footer a:hover {
   }
 }
 
-.post .the.content {
-  margin-bottom: 50px;
-}
-
 /* [Dot Separator On Post Meta -- date and author name]
 -------------------------------------------------------------------*/
 
 .dot.separator {
   display: inline-block;
   *display: inline;
+  /* Fix for IE7 */
   zoom: 1;
   /* Fix for IE7 */
   vertical-align: top;
@@ -1355,7 +1344,7 @@ footer a:hover {
 }
 
 .in-post.meta .meta.content {
-  margin-top: 15px;
+  margin-top: 20px;
   font-size: 12px;
   font-style: italic;
   line-height: 20px;
@@ -1364,6 +1353,7 @@ footer a:hover {
 .in-post.meta .author.name {
   display: inline-block;
   *display: inline;
+  /* Fix for IE7 */
   zoom: 1;
   /* Fix for IE7 */
   vertical-align: top;
@@ -1415,7 +1405,6 @@ footer a:hover {
   display: block;
   position: relative;
   font-size: 12px;
-  -webkit-border-radius: 0px;
   border-radius: 0px;
 }
 
@@ -1427,7 +1416,6 @@ footer a:hover {
   padding-right: 10px;
   color: #ffffff;
   white-space: nowrap;
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
 
@@ -1490,4 +1478,11 @@ footer a:hover {
   .pagination.holder a.older-posts {
     right: 200px;
   }
+}
+
+/* [Overriding Disqus Thread Styles]
+-------------------------------------------------------------------*/
+
+#disqus_thread {
+  margin-top: 30px;
 }
