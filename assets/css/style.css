@@ -1491,3 +1491,10 @@ footer a:hover {
     right: 200px;
   }
 }
+
+/* [Overriding Disqus Thread Styles]
+-------------------------------------------------------------------*/
+
+#disqus_thread {
+  margin-top: 30px;
+}
