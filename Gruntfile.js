@@ -25,6 +25,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-prettify');
     grunt.loadNpmTasks('grunt-devtools');
+    grunt.loadNpmTasks('grunt-contrib-compress');
+    grunt.loadNpmTasks('grunt-markdown');
 
     grunt.initConfig({
 
@@ -38,7 +40,9 @@ module.exports = function(grunt) {
             css: ['assets/css'],
             js: ['assets/js'],
             img: ['assets/images', '*.ico', '*.png'],
-            template: ['./*.hbs']
+            template: ['./*.hbs'],
+            pack: ['suave-theme-and-docs/'],
+            build: ['production/']
         },
 
         /**
@@ -168,6 +172,24 @@ module.exports = function(grunt) {
                     src: ['src/fonticon/fontello/**/*', '!src/fonticon/fontello/demo.html'],
                     dest: 'assets/css'
                 }]
+            },
+            build: {
+                files: [{
+                    expand: true,
+                    flatten: false,
+                    cwd: './',
+                    src: ['*.hbs', 'assets/**', 'partials/**', 'data/**', 'skins/**'],
+                    dest: 'production/'
+                }]
+            },
+            pack: {
+                files: [{
+                    expand: true,
+                    flatten: false,
+                    cwd: './',
+                    src: ['documentation.md', 'documentation.html'],
+                    dest: 'suave-theme-and-docs/'
+                }]
             }
         },
         /**
@@ -247,6 +269,14 @@ module.exports = function(grunt) {
                     }
                 },
                 src: 'dist/*.html'
+            },
+            livereload: {
+                options: {
+                    callback: function($) {
+                        $('script.livereload').remove();
+                    },
+                },
+                src: 'production/default.hbs'
             },
         },
         /**
@@ -355,7 +385,47 @@ module.exports = function(grunt) {
                     'src/images/**/*'],
                 tasks: ['clean:img', 'copy:img']
             }
+        },
+        /**
+         * Convert markdown into HTML
+         *
+         * @type {Object}
+         * @todo other regarde tasks for js, image etc.
+         */
+        markdown: {
+            all: {
+                files: [{
+                    expand: true,
+                    src: 'documentation.md',
+                    dest: './',
+                    ext: '.html'
+                }]
+            }
+        },
+
+        /**
+         * Compressed Packed Files
+         *
+         * @type {Object}
+         * @todo other regarde tasks for js, image etc.
+         */
+        compress: {
+            suave: {
+                options: {
+                    archive: 'suave-theme-and-docs/suave.zip'
+                },
+                files: [
+                    {
+                        expand: true, 
+                        flatten: false,
+                        cwd: 'production/',
+                        src: ['*.hbs', 'partials/**', 'assets/**', 'skins/**'], 
+                        dest: 'suave/'
+                    }
+                ]
+            }
         }
+
     });
 
     /**
@@ -377,41 +447,18 @@ module.exports = function(grunt) {
      * ======================================================================================================================================
      */
 
-    grunt.registerTask('buildcompress', 'build html with compressed css and js', function(t) {
-        if (t) grunt.task.run(['clean:all',
-            'less','copy:fontellocss',
-            'jade', 
-            'copy:img',
-            'dom_munger:target', 'dom_munger:targetCss', 'cssmin', 
-            'copy:js', 
-            'uglify', 
-            'dom_munger:jscompress', 'dom_munger:csscompress']);
-        else grunt.task.run(['clean:all', 
-            'less','copy:fontellocss',
-            'jade', 
-            'copy:img',
-            'dom_munger:target', 'dom_munger:targetCss', 'cssmin', 
-            'copy:js', 
-            'uglify']);
-    });
-    grunt.registerTask('buildconcat', 'build html with compressed and concatted css and js', function(t) {
-        if (t) grunt.task.run(['clean:all', 
-            'less','copy:fontellocss',
-            'jade', 
-            'copy:img', 
-            'dom_munger:target', 'dom_munger:targetCss', 'cssmin', 
-            'copy:js',
-            'uglify', 
-            'dom_munger:jsconcat', 'dom_munger:cssconcat']);
-        else grunt.task.run(['clean:all', 
-            'less','copy:fontellocss',
-            'jade', 
-            'copy:img',
-            'dom_munger:target', 'dom_munger:targetCss', 'cssmin', 
-            'copy:js', 
-            'uglify']);
+    grunt.registerTask('build', [
+        'clean:build', 
+        'copy:build',
+        'dom_munger:livereload',
+        'clean:pack', 
+        'copy:pack',
+        'compress:suave'
+    ]);
 
-    });
+    /**
+     * ======================================================================================================================================
+     */
 
     /* Generate Changelog
      * - Pulls changelog from git, excluding merges.
